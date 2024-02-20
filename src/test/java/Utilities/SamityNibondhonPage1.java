@@ -39,11 +39,11 @@ public class SamityNibondhonPage1 extends Methods{
 	
 	public By osompurnoButton_c = By.xpath("//span[contains(text(),'অসম্পূর্ণ আবেদন')]");
 	public By OsompurnoSamityname_w = By.name("projectId");
-	public void OsompurnoAbedonfirstpageInputs() throws InterruptedException{
+	public void OsompurnoAbedonfirstpageInputs(String OsompurnoSamityName) throws InterruptedException{
 		clickElement(SamityNibondhon_click);
 		clickWaitElement(osompurnoButton_c);
 		//
-		DropDownSelectByVisibleText(OsompurnoSamityname_w, "Ornob5");
+		DropDownSelectByVisibleText(OsompurnoSamityname_w,OsompurnoSamityName);
 	
 	}
 	public By page2_w = By.xpath("//span[@class='doc-title']");

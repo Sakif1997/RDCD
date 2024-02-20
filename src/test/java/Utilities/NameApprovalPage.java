@@ -23,7 +23,7 @@ public class NameApprovalPage extends Methods{
 		WaitElementVisible(KarzokromBabosthaponaPage_w);
 		clickElement(NewSamitiAcceptanceOption_c);
 		WaitElementVisible(NameClearanceApprovalPage_w);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		takeScreenshot("Visible for accept Smaity");
 		ScrollDown();
 		Thread.sleep(2000);
@@ -33,16 +33,10 @@ public class NameApprovalPage extends Methods{
 		WaitElementVisible(BacktolistPage_w);
 		Thread.sleep(1000);
 		takeScreenshot("Accepted notification");
-		
-		
-		
-		
 		Thread.sleep(5000);
 		//WaitElementVisible(ProfileIcon_w);
 		clickWaitElement(ProfileIcon_w);
 		Thread.sleep(1500);
 		clickWaitElement(logout);
 	}
-	
-
 }

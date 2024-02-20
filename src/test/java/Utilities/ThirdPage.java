@@ -11,7 +11,7 @@ public class ThirdPage extends Methods{
 	public void page3() throws InterruptedException{
 		WaitElementVisible(page3_w);
 		Thread.sleep(2000);
-		clickElement(NewMemberAddButton_c);
+		clickWaitElement(NewMemberAddButton_c);
 	}
 
 }

@@ -95,10 +95,12 @@ public class MemberFour extends Methods{
 		DropDownSelectByVisibleText(Unmarried_drop, "অবিবাহিত");
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
+		//Thread.sleep(2000);
+		//clickElement(SameAddress_c);
+		
 		Thread.sleep(2000);
-		clickElement(SameAddress_c);
 		clickElement(PersonImageSelect_c);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\4.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);

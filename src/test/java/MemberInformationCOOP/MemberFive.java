@@ -96,9 +96,9 @@ public class MemberFive extends Methods{
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		Thread.sleep(2000);
-		clickElement(SameAddress_c);
+		//clickElement(SameAddress_c);
 		clickElement(PersonImageSelect_c);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\5.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);
@@ -108,7 +108,8 @@ public class MemberFive extends Methods{
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\Document.png");
 		Thread.sleep(2000);
 		clickElement(SaveButton_c);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+		ScrollUp();
 
 	}
 }

@@ -96,9 +96,12 @@ public class MemberThree extends Methods{
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		Thread.sleep(2000);
-		clickElement(SameAddress_c);
-		clickElement(PersonImageSelect_c);
+		//clickElement(SameAddress_c);
 		
+		//Thread.sleep(2000);
+		clickElement(PersonImageSelect_c);
+		Thread.sleep(2000);
+
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\3.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);

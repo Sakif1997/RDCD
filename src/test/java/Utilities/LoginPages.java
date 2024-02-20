@@ -7,11 +7,11 @@ public class LoginPages extends Methods{
 	public By Onbord_w = By.xpath("(//img[@alt='Logo'])[1]");
 	public By Username_in = By.xpath("//input[@id='username']");
 	public By Password_in = By.xpath("//input[@id='password']");
-	public By Dropdown_c = By.xpath("//select[@id='mui-3']");
+	public By Dropdown_c = By.name("componentName");
 	public By Baboharkari_w_c =By.xpath("//span[contains(text(),'ব্যবহারকারী')]");
 	//public By RadioButton_c = By.xpath("//span[contains(text(),'ব্যবহারকারী')]");
 	public By DoptorField_w = By.xpath("(//span[contains(text(),'দপ্তরের নাম')])[1]");
-	public By Dropdown= By.xpath("//select[@id='mui-5']");
+	public By Dropdown= By.name("doptorId");
 	public By loginButton = By.xpath("//button[contains(text(),'প্রবেশ করুন')]");
 	public By LandHomepage_w = By.xpath("//img[@alt='Site Logo']");
 	

@@ -34,6 +34,12 @@ public class SamityNibondhonFirstPage extends Methods{
 //	//মৎস্য অধিদপ্তর
 	public By SaveButton_click = By.xpath("//button[@aria-label='সংরক্ষন করুন ও পরবর্তী পাতায়']");
 	
+	
+	public By secondPageicon_c = By.xpath("//div[@class='css-kmnk85']");
+
+//	public By secondPage_w = By.xpath("//span[@class='doc-title");
+	public By nextPage_c = By.xpath("//button[@aria-label='হালনাগাদ করুন']");
+//	
 	public void firstpageInputs(String SamityName) throws InterruptedException{
 		clickElement(SamityNibondhon_click);
 		clickWaitElement(NotunAbedon_c);
@@ -68,6 +74,14 @@ public class SamityNibondhonFirstPage extends Methods{
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(songostha_dropdown, "মৎস্য অধিদপ্তর");
 		clickElement(SaveButton_click);
+		Thread.sleep(5000);
+		//clickElement(secondPageicon_c);
+		//Thread.sleep(3000);
+		//ScrollDown();
+
+//		WaitElementVisible(secondPage_w);
+//		ScrollDown();
+		//clickElement(nextPage_c);
 	
 	}
 

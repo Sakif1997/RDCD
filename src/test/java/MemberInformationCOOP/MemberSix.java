@@ -96,9 +96,9 @@ public class MemberSix extends Methods{
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		Thread.sleep(2000);
-		clickElement(SameAddress_c);
+		clickElement(SameAddress_c);//change request
+		//Thread.sleep(2000);
 		clickElement(PersonImageSelect_c);
-		
 		Thread.sleep(2000);
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\6.png");
 		clickElement(PersonSignatureSelect_c);

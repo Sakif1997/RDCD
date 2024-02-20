@@ -38,7 +38,22 @@ public class SamityNibondhonPage1Test extends BrowserSetup{
 	public void logged() throws InterruptedException, IOException, AWTException {
 		log.Baboharkarilogin();
 		//smp.firstpageInputs();
-		smp.OsompurnoAbedonfirstpageInputs();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		////////////Samity Name Input\\\\\\\\\\\\\\\\\\\\
+		
+		smp.OsompurnoAbedonfirstpageInputs("Samity Name");
+		
+		
+		
 		//smp.Page2();
 		//smp.page3();
 		//m1.addMember();

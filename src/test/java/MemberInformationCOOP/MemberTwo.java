@@ -66,9 +66,9 @@ public class MemberTwo extends Methods{
 	public By thana_drp =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/select[1]");
 	//মণিরামপুর
 	public By SameAddress_c =By.xpath("//input[@type='checkbox']");
-	public By PersonImageSelect_c =By.xpath("//label[@for='0']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
-	public By PersonSignatureSelect_c =By.xpath("//label[@for='1']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
-	public By PersonDOcumentSelect_c =By.xpath("//label[@for='2']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
+	public By PersonImageSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/label[1]/span[1]");
+	public By PersonSignatureSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[2]/label[1]/span[1]");
+	public By PersonDOcumentSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[3]/div[1]/div[2]/label[1]/span[1]");
 
 	public By SaveButton_c =By.xpath("//button[@aria-label='সংরক্ষন করুন']");
 	public By x =By.xpath("");
@@ -95,17 +95,19 @@ public class MemberTwo extends Methods{
 		DropDownSelectByVisibleText(Unmarried_drop, "অবিবাহিত");
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
-		Thread.sleep(2000);
-		clickElement(SameAddress_c);
-		clickElement(PersonImageSelect_c);
+		//Thread.sleep(2000);
+		//clickElement(SameAddress_c);
 		
+		Thread.sleep(2000);
+		clickElement(PersonImageSelect_c);
+		Thread.sleep(4000);
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\2.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\signature.png");
+		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\Signature.png");
 		clickElement(PersonDOcumentSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\Document.png");
+		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
 		Thread.sleep(2000);
 		clickElement(SaveButton_c);
 		Thread.sleep(2000);

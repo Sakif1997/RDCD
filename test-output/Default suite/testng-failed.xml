@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCase.SamityAcceptance">
+      <class name="TestCase.NameClearanceTest">
         <methods>
+          <include name="NameClearance"/>
           <include name="setBrowser"/>
           <include name="setExtent"/>
           <include name="endReport"/>
           <include name="quitBrowser"/>
-          <include name="NewSamityNameApproval"/>
         </methods>
-      </class> <!-- TestCase.SamityAcceptance -->
+      </class> <!-- TestCase.NameClearanceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,15 +12,6 @@
           <include name="quitBrowser"/>
         </methods>
       </class> <!-- TestCase.NineStepMemberCreation -->
-      <class name="TestCase.SamityAcceptance">
-        <methods>
-          <include name="setExtent"/>
-          <include name="setBrowser"/>
-          <include name="endReport"/>
-          <include name="NewSamityNameApproval"/>
-          <include name="quitBrowser"/>
-        </methods>
-      </class> <!-- TestCase.SamityAcceptance -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

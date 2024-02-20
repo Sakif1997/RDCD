@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.UUID;
 
 
+import Browser.BrowserSetup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -93,11 +94,8 @@ public class Methods {
 		}
 		public void AleartMessage() {
 			  String alertMessage= getDriver().switchTo().alert().getText();		
-		  	
-		        System.out.println(alertMessage);	
-			
+		      System.out.println(alertMessage);
 		}
-
 	    public void clickDropdownOption(By dropdownLocator) {
 	        // Click on the div to open the dropdown
 	        WebElement dropdown = getDriver().findElement(dropdownLocator);
