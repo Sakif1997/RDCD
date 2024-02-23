@@ -7,15 +7,15 @@ public class NameClearancePage extends Methods{
 	public By NameClearancePage_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
 
 	public By prathomic_c =By.xpath("//span[contains(text(),'প্রাথমিক')]");
-	public By selectBivag_D = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/select[1]");
+	public By selectBivag_D = By.name("division");
 	//খুলনা
-	public By selectjela_D = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/select[1]");
+	public By selectjela_D = By.name("district");
 	//যশোর 
-	public By selectoffice_D = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/select[1]");
+	public By selectoffice_D = By.name("upazila");
 	//উপজেলা সমবায় অফিস, মণিরামপুর, যশোর
-	public By selectCategory_D = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/select[1]");
+	public By selectCategory_D = By.name("samityTypeId");
 	//কৃষি বা কৃষক সমবায় সমিতি
-	public By SomitiName_in =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/input[1]");
+	public By SomitiName_in =By.name("samityName");
 	//জাগো
 	public By SaveButton_c =By.xpath("//button[contains(text(),'সংরক্ষন করুন')]");
 	//logout
@@ -35,6 +35,7 @@ public class NameClearancePage extends Methods{
 		DropDownSelectByVisibleText(selectjela_D,"যশোর");
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(selectoffice_D, "উপজেলা সমবায় অফিস, মণিরামপুর, যশোর");
+		Thread.sleep(2000);
 		DropDownSelectByVisibleText(selectCategory_D, "কৃষি বা কৃষক সমবায় সমিতি");
 		Thread.sleep(2000);
 		FieldValue(SomitiName_in, SamityName);//have to change

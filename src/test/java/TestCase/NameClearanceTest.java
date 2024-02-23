@@ -14,7 +14,7 @@ public class NameClearanceTest extends BrowserSetup{
 	public void NameClearance() throws InterruptedException, IOException{
 		login.Baboharkarilogin();
 		//Enter Name Every time
-		nc.NameClearanceApply("QA Test-9");
+		nc.NameClearanceApply("QA Test-17");
 	}
 }
  

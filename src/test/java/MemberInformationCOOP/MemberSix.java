@@ -94,6 +94,7 @@ public class MemberSix extends Methods{
 		DropDownSelectByVisibleText(religion_drop, "ইসলাম");
 		DropDownSelectByVisibleText(Unmarried_drop, "অবিবাহিত");
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
+		Thread.sleep(2000);
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		Thread.sleep(2000);
 		clickElement(SameAddress_c);//change request

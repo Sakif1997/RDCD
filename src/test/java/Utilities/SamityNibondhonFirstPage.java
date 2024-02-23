@@ -47,7 +47,8 @@ public class SamityNibondhonFirstPage extends Methods{
 		clickElement(Prathomic_c);
 		
 		////////////////////////Customize this name to Find Samity/////////////////////////
-		
+		Thread.sleep(2000);
+
 		DropDownSelectByVisibleText(SamityNameSelect_DropdownSelect, SamityName);
 		//		DropDownSelectByVisibleText(SamityNameSelect_DropdownSelect, "সমিতি ২");
 

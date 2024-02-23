@@ -43,9 +43,17 @@ public class NineStepMemberCreation extends BrowserSetup{
 	
 
 	LoginBaboharkari log = new LoginBaboharkari();
+
 	SamityNibondhonFirstPage p1= new SamityNibondhonFirstPage();
 	Nibondhon2ndPage p2= new Nibondhon2ndPage();
 	ThirdPage p3 = new ThirdPage();
+	CommityBabosthaponaPage p4 = new CommityBabosthaponaPage();
+	ArthikinfoPage p5 = new ArthikinfoPage();
+	SamityJomaKorochPage p6 = new SamityJomaKorochPage();
+	SamityMoneyExchangeInfoPage7 p7 = new SamityMoneyExchangeInfoPage7();
+	SamityBudgetPage8 p8 = new SamityBudgetPage8();
+	SamityDocumentPage9 p9 = new SamityDocumentPage9();
+	NibondhonRequestPage10 p10 = new NibondhonRequestPage10();
 	//SamityNibondhonPage1Test np2 = new SamityNibondhonPage1();
 
 	SamityNibondhonPage1 newP2 = new SamityNibondhonPage1();
@@ -57,13 +65,13 @@ public class NineStepMemberCreation extends BrowserSetup{
 	
 	//landing on First Page 
 	//Pre-requisitve : Must have created a samity previously
-	SamityNibondhonFirstPage SamityNibondhonPage1 = new SamityNibondhonFirstPage();
+	//SamityNibondhonFirstPage SamityNibondhonPage1 = new SamityNibondhonFirstPage();
 	
 	@Test(description = "Samity Name Use Input ")
 	public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
 		log.Baboharkarilogin();
 		//SamityName Input in First Page
-		p1.firstpageInputs("QA Test-9");
+		p1.firstpageInputs("QA Test-17");
 		Thread.sleep(2000);
 		//newP2.Page2();
 		UpPage2.Page2();
@@ -93,6 +101,18 @@ public class NineStepMemberCreation extends BrowserSetup{
 		//method.ScrollUp();
 		p3.page3();
 		mSix.addMember();
+		getDriver().navigate().refresh();
+		p3.AfterAddMemberPage3();
+		p4.ComityPodobiPage();
+		p5.ArthikinfoPage();
+		p6.Samity_JomaKorochPage();
+		Thread.sleep(4000);
+		p7.SamityArthikInfoPage7();
+		p8.BudgeSelection();
+		p9.DocumentAttachments();
+		p10.FinalPage();
+
+
 		//p3.page3();
 		//smp.OsompurnoAbedonfirstpageInputs();
 		}

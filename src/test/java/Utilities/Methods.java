@@ -29,9 +29,11 @@ public class Methods {
 		public void clickElement(By locator) {
 			getElement(locator).click();
 		}
+
 		public void FieldValue(By locator,String text) {
 			getElement(locator).sendKeys(text);
 		}
+
 		public void WaitElementVisible(By locator) {
 			WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -123,6 +125,13 @@ public class Methods {
 			public void takeScreenshot(String name) {
 				Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES)));
 			}
-		
+		public void KeybordInputSelectOption(By locator,String text){
+			clickElement(locator);
+			FieldValue(locator, text);
+			Actions action = new Actions(getDriver());
+			action.keyDown(Keys.ARROW_DOWN);
+			action.keyDown(Keys.ENTER);
+			action.build().perform();
+		}
 			
 }

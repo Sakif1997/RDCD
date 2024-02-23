@@ -13,5 +13,13 @@ public class ThirdPage extends Methods{
 		Thread.sleep(2000);
 		clickWaitElement(NewMemberAddButton_c);
 	}
+	public By NextPage_w_c = By.xpath("//button[contains(text(),'পরবর্তী পাতায়')]");
+	public By CommityBabosthaponaPage_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");//remove
+	public void AfterAddMemberPage3() throws InterruptedException{
+		//clickElement(SodossoPageIcon_c);
+		clickWaitElement(NextPage_w_c);
+		WaitElementVisible(CommityBabosthaponaPage_w);
+		Thread.sleep(2000);
+	}
 
 }
