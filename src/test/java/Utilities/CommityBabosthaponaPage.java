@@ -60,6 +60,7 @@ public class CommityBabosthaponaPage extends Methods{
         DropDownSelectByVisibleText(MemberFourPodobi_d,"ট্রেজারার");
         DropDownSelectByVisibleText(MemberFivePodobi_d,"সহ-সভাপতি");
         DropDownSelectByVisibleText(MemberSixPodobi_d,"সদস্য");
+        takeScreenshot("Members Designation");
         Thread.sleep(3000);
         clickElement(SaveButton_c);
     }

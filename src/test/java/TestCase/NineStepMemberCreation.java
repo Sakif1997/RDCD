@@ -67,11 +67,11 @@ public class NineStepMemberCreation extends BrowserSetup{
 	//Pre-requisitve : Must have created a samity previously
 	//SamityNibondhonFirstPage SamityNibondhonPage1 = new SamityNibondhonFirstPage();
 	
-	@Test(description = "Samity Name Use Input ")
+	@Test(description = "৯স্টেপ সমিতি গঠন  এবং অনুমোদন এর জন্য প্রেরণ")
 	public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
 		log.Baboharkarilogin();
 		//SamityName Input in First Page
-		p1.firstpageInputs("QA Test-17");
+		p1.firstpageInputs("টেস্ট সমিতি ");
 		Thread.sleep(2000);
 		//newP2.Page2();
 		UpPage2.Page2();

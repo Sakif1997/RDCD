@@ -22,6 +22,7 @@ public class NibondhonRequestPage10 extends Methods{
         clickElement(SonodRequestTo_cl);
         clickElement(AgreeButton_c);
         Thread.sleep(2000);
+        takeScreenshot("Final Page for Submittion");
         clickElement(FinalRequestSend_c);
         WaitElementVisible(CompletionPage_w);
         Thread.sleep(2000);

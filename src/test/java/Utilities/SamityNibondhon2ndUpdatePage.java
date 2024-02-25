@@ -9,5 +9,6 @@ public class SamityNibondhon2ndUpdatePage extends Methods {
         WaitElementVisible(page2_w);
         ScrollDown();
         clickElement(SaveButton_c);
+        takeScreenshot("2nd page");
     }
 }

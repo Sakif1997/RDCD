@@ -97,6 +97,7 @@ public class SamityBudgetPage8 extends Methods{
             clickElement(canceloptions22_c);
             Thread.sleep(1500);
         }
+        takeScreenshot("joma - khoroch");
         //clickElement(SaveToNextPage);
         Thread.sleep(2000);
         ScrollDown();

@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Feb 03 16:06:57 BDT 2024","Sat Feb 03 16:07:22 BDT 2024","25183","Suite","Test","TestCase.NameClearanceTest","TestCase.NameClearanceTest","NameClearance","Check system allow new name clearance(নেম ক্লিয়ারেন্স)",""
-"passed","Sat Feb 03 16:06:29 BDT 2024","Sat Feb 03 16:06:56 BDT 2024","27416","Suite","Test","TestCase.DuplicateNameInputValidation","TestCase.DuplicateNameInputValidation","DupNameApproval","System not take any duplicate Samity Name(Caution message:সমিতিটির নাম বিদ্যমান রয়েছে
-)",""
-"passed","Wed Jan 24 16:33:20 BDT 2024","Wed Jan 24 16:33:31 BDT 2024","10524","Default suite","Default test","TestCase.LoginBaboharkari","TestCase.LoginBaboharkari","Baboharkarilogin","Baboharkarilogin",""
-"passed","Wed Jan 31 17:03:12 BDT 2024","Wed Jan 31 17:03:19 BDT 2024","7596","Default suite","Default test","TestCase.LoginUser","TestCase.LoginUser","User","Login By User",""
-"passed","Sat Feb 03 16:07:22 BDT 2024","Sat Feb 03 16:07:49 BDT 2024","27121","Suite","Test","TestCase.SamityAcceptance","TestCase.SamityAcceptance","NewSamityNameApproval","New Samity Approved By উপজেলা সমবায় অফিসার",""

@@ -74,6 +74,7 @@ public class SamityNibondhonFirstPage extends Methods{
 		FieldValue(mobileNumber_input,"01390743818");
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(songostha_dropdown, "মৎস্য অধিদপ্তর");
+		takeScreenshot("First Page");
 		clickElement(SaveButton_click);
 		Thread.sleep(5000);
 		//clickElement(secondPageicon_c);

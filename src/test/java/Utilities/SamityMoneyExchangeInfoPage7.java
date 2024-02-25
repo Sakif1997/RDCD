@@ -46,6 +46,7 @@ public class SamityMoneyExchangeInfoPage7 extends Methods{
             clickElement(canceloptions2_c);
             Thread.sleep(1500);
         }
+        takeScreenshot("joma - khoroch");
         clickElement(SaveToNextPage);
         Thread.sleep(2000);
         WaitElementVisible(SaveToNextPage);

@@ -110,6 +110,7 @@ public class MemberThree extends Methods{
 		Thread.sleep(2000);
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\Document.png");
 		Thread.sleep(2000);
+		takeScreenshot("Member Include");
 		clickElement(SaveButton_c);
 		Thread.sleep(2000);
 

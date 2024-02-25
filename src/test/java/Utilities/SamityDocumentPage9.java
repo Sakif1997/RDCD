@@ -64,9 +64,11 @@ public class SamityDocumentPage9 extends Methods {
         Thread.sleep(2000);
         up.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\Document.png");
         Thread.sleep(2000);
+        takeScreenshot("Document Inclusion");
         clickElement(SaveButton_c);
         Thread.sleep(4000);
         WaitElementVisible(page9_w);
+
         clickElement(NextPage_c);
         Thread.sleep(2000);
         WaitElementVisible(Page10_v);

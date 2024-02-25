@@ -12,6 +12,7 @@ public class Nibondhon2ndPage extends Methods {
 
 		WaitElementVisible(secondPage_w);
 		ScrollDown();
+		takeScreenshot("Second Page");
 		clickElement(nextPage_c);
 	}
 }

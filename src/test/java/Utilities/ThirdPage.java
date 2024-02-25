@@ -12,6 +12,7 @@ public class ThirdPage extends Methods{
 		WaitElementVisible(page3_w);
 		Thread.sleep(2000);
 		clickWaitElement(NewMemberAddButton_c);
+		takeScreenshot("Add member");
 	}
 	public By NextPage_w_c = By.xpath("//button[contains(text(),'পরবর্তী পাতায়')]");
 	public By CommityBabosthaponaPage_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");//remove
@@ -21,5 +22,6 @@ public class ThirdPage extends Methods{
 		WaitElementVisible(CommityBabosthaponaPage_w);
 		Thread.sleep(2000);
 	}
+
 
 }
