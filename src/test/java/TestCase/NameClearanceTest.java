@@ -14,7 +14,7 @@ public class NameClearanceTest extends BrowserSetup{
 	public void NameClearance() throws InterruptedException, IOException{
 		login.Baboharkarilogin();
 		//Enter Name Every time
-		nc.NameClearanceApply("টেস্ট সমিতি");
+		nc.NameClearanceApply("ইরা ইনফোটেক পারুল আপু আরডিসিডি সমবায় সমিতি-2");
 	}
 }
  

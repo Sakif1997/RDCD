@@ -20,9 +20,10 @@ public class LoginPages extends Methods{
 	
 	
 	//login by baboharkari
-	public void loginAsBaboharkari() throws InterruptedException{
+	public void loginAsBaboharkari(String id) throws InterruptedException{
 		WaitElementVisible(Onbord_w);
-		FieldValue(Username_in, "01686026037");
+		//FieldValue(Username_in, "01686026037");//LOcalhost
+		FieldValue(Username_in, id);//stage server
 		FieldValue(Password_in,"123");
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(Dropdown_c, "কোপ");

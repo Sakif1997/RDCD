@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestCase.NameClearanceTest"/>
-      <class name="TestCase.SamityAcceptance"/>
-      <class name="TestCase.NineStepMemberCreation"/>
+      <class name="TestCase.StageServerNameClearanceTest"/>
+      <class name="TestCase.StageServerSamityAcceptance"/>
+      <class name="TestCase.StageServerNineStepMemberCreation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

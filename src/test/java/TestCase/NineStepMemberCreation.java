@@ -38,9 +38,6 @@ public class NineStepMemberCreation extends BrowserSetup{
 	MemberFive mFIve = new MemberFive();
 	MemberSix mSix =new MemberSix();
 	
-	
-	
-	
 
 	LoginBaboharkari log = new LoginBaboharkari();
 
@@ -71,7 +68,7 @@ public class NineStepMemberCreation extends BrowserSetup{
 	public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
 		log.Baboharkarilogin();
 		//SamityName Input in First Page
-		p1.firstpageInputs("টেস্ট সমিতি ");
+		p1.firstpageInputs("ইরা ইনফোটেক পারুল আপু আরডিসিডি সমবায় সমিতি-2");
 		Thread.sleep(2000);
 		//newP2.Page2();
 		UpPage2.Page2();

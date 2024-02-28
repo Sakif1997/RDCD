@@ -11,6 +11,7 @@ public class SamityAcceptance extends BrowserSetup{
 	NameApprovalPage NMP = new NameApprovalPage();
 	@Test(description = "নতুন সমিতি অনুমোদন By উপজেলা সমবায় অফিসার")
 	public void NewSamityNameApproval() throws InterruptedException{
+		//getDriver().get("https://stage-coop.rdcd.gov.bd/login");
 		getDriver().get("http://10.11.200.30:3090/login");
 		login.LoginByUser();
 		Thread.sleep(2000);
