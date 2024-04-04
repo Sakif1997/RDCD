@@ -42,10 +42,17 @@ public class CommityBabosthaponaPage extends Methods{
     //সদস্য
     public By SaveButton_c = By.xpath("//button[@aria-label='সংরক্ষন করুন']");
 
+    public By SamityNationalButton_c =By.xpath("//input[@aria-label='controlled']");
+    public By natinalSamityPersonSelect_drop =By.name("signingp");
     public void ComityPodobiPage() throws InterruptedException{
         DropDownSelectByVisibleText(MemberSelect_d,"জিহাদ");
         DropDownSelectByVisibleText(ConnectionInfo_d,"নিলা");
+        clickElement(SamityNationalButton_c);
+
+
+        DropDownSelectByVisibleText(natinalSamityPersonSelect_drop,"অর্ণব");
         DropDownSelectByVisibleText(CommityMemberNumber_d,"৬ জন");
+
         Thread.sleep(4000);
         DropDownSelectByVisibleText(MemberOne_d,"জিহাদ");
         DropDownSelectByVisibleText(MemberTwo_d,"নিলা");

@@ -24,9 +24,9 @@ public class NameClearancePage extends Methods{
 
 	public By profileicon_c = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/header[1]/div[1]/div[1]/div[2]/div[2]/div[1]/button[4]/*[name()='svg'][1]");
 	public By Logout_w_c = By.xpath("//div[@id='primary-search-account-menu']//li[@role='menuitem'][contains(text(),'লগ-আউট')]");
-	
 	//NameclearanceTest.java
-	public void NameClearanceApply(String SamityName) throws InterruptedException{	
+	public void NameClearanceApply(String SamityName) throws InterruptedException{
+        //getDriver().navigate().refresh();
 		clickElement(NameClearance_c);
 		WaitElementVisible(NameClearancePage_w);
 		clickElement(prathomic_c);
@@ -42,10 +42,10 @@ public class NameClearancePage extends Methods{
 		//takeScreenshot("completion of name enter");
 		clickElement(SaveButton_c);
 		takeScreenshot("completion of name enter");
-		Thread.sleep(5000);// use to delay
-		clickWaitElement(profileicon_c);
-		Thread.sleep(2000);
-		clickElement(Logout_w_c);
+		Thread.sleep(2000);// use to delay
+		//clickWaitElement(profileicon_c);
+		//Thread.sleep(2000);
+		//clickElement(Logout_w_c);
 		//Alert alert = getDriver().switchTo().alert();
 		//String alert01 = alert.getText();
 		//System.out.println(alert01);

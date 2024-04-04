@@ -7,29 +7,9 @@
         <methods>
           <include name="NameClearance"/>
           <include name="setBrowser"/>
-          <include name="setExtent"/>
-          <include name="endReport"/>
           <include name="quitBrowser"/>
         </methods>
       </class> <!-- TestCase.NameClearanceTest -->
-      <class name="TestCase.NineStepMemberCreation">
-        <methods>
-          <include name="UpToAddMember"/>
-          <include name="setExtent"/>
-          <include name="setBrowser"/>
-          <include name="endReport"/>
-          <include name="quitBrowser"/>
-        </methods>
-      </class> <!-- TestCase.NineStepMemberCreation -->
-      <class name="TestCase.SamityAcceptance">
-        <methods>
-          <include name="setExtent"/>
-          <include name="setBrowser"/>
-          <include name="endReport"/>
-          <include name="quitBrowser"/>
-          <include name="NewSamityNameApproval"/>
-        </methods>
-      </class> <!-- TestCase.SamityAcceptance -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

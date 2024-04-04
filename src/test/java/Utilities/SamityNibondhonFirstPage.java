@@ -13,7 +13,7 @@ public class SamityNibondhonFirstPage extends Methods{
 	public By gram_in = By.name("samityDetailsAddress");
 	public By gram_dropdown = By.name("memberAreaType");
 	//জেলা
-	//public By Union1_dropdown = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1]");
+	public By gram1_dropdown = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[5]/div[1]/div[1]/input[1]");
 	//মণিরামপুর                              /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1]
 	     //  public By gram1_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[5]/div[1]/div[1]/input[1]");
 	//মনিরামপুর
@@ -58,25 +58,26 @@ public class SamityNibondhonFirstPage extends Methods{
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(Union_dropdown, "মণিরামপুর");
 		FieldValue(gram_in, "মনিরামপুর");
-		DropDownSelectByVisibleText(gram_dropdown, "জেলা");
-//		DropDownSelectByVisibleText(Union1_dropdown, "মণিরামপুর");
-//		FieldValue(gram1_in, "মনিরামপুর");
+		DropDownSelectByVisibleText(gram_dropdown, "গ্রাম/মহল্লা");
+		Thread.sleep(1000);
+		FieldValue(gram1_dropdown, "মণিরামপুর");
+//		//FieldValue(gram1_in, "মনিরামপুর");
 		clickElement(SameELakaInput_click);
 		Thread.sleep(2000);
 		ScrollDown();
 		clickElement(SamityTarik_click_input);
 		FieldValue(SamityTarik_click_input, "010123");
 		FieldValue(VortiFee_input, "2000");
-		FieldValue(ShareShonkha_input, "12000");
+		FieldValue(ShareShonkha_input, "12");
 		FieldValue(SharePrice_input, "100");
 		Thread.sleep(2000);
-		FieldValue(sharesell_input, "12000");
+		FieldValue(sharesell_input, "12");
 		FieldValue(mobileNumber_input,"01390743818");
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(songostha_dropdown, "মৎস্য অধিদপ্তর");
 		takeScreenshot("First Page");
 		clickElement(SaveButton_click);
-		Thread.sleep(5000);
+		//Thread.sleep(2000);
 		//clickElement(secondPageicon_c);
 		//Thread.sleep(3000);
 		//ScrollDown();

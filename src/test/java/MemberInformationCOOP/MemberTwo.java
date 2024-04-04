@@ -5,7 +5,6 @@ import java.awt.AWTException;
 import org.openqa.selenium.By;
 
 import Utilities.Methods;
-
 public class MemberTwo extends Methods{
 	UploadMethod upload = new UploadMethod();
 	public By NibondhonPage_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
@@ -98,13 +97,13 @@ public class MemberTwo extends Methods{
 		//Thread.sleep(2000);
 		//clickElement(SameAddress_c);
 		
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		clickElement(PersonImageSelect_c);
 		Thread.sleep(4000);
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\2.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\Signature.png");
+		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
 		clickElement(PersonDOcumentSelect_c);
 		Thread.sleep(2000);
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");

@@ -3,6 +3,7 @@ import static Browser.BrowserSetup.getDriver;
 
 import java.io.ByteArrayInputStream;
 import java.time.Duration;
+import java.util.Random;
 import java.util.UUID;
 
 
@@ -54,7 +55,17 @@ public class Methods {
 			String random = UUID.randomUUID().toString();
 			return random;
 		}
-		public void clickWaitElement(By locator) {
+	public static String generateRandomID() {
+		Random random = new Random();
+		int idLength = random.nextInt(10) + 1; // Generate a random length between 1 and 10
+		StringBuilder stringBuilder = new StringBuilder();
+		for (int i = 0; i < idLength; i++) {
+			stringBuilder.append(random.nextInt(10)); // Append a random digit (0-9)
+		}
+		return stringBuilder.toString();
+	}
+
+	public void clickWaitElement(By locator) {
 			WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
 			WebElement waitelement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 			waitelement.click();

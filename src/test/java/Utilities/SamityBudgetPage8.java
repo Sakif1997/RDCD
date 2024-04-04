@@ -58,44 +58,44 @@ public class SamityBudgetPage8 extends Methods{
     public void BudgeSelection() throws InterruptedException{
         DropDownSelectByVisibleText(BudgetYear_s,"২০২৪-২০২৫");
         KeybordInputSelectOption(joma1_in_enter,"আয়(30000000)");
-        FieldValue(InputMoney1_in,"৫০০০");
-        Thread.sleep(2000);
+        FieldValue(InputMoney1_in,"২০০০");
+        //Thread.sleep(2000);
         KeybordInputSelectOption(joma2,"মেয়াদী জমা(20301027)");
-        FieldValue(InputMoney2_in,"৫০০০");
+        FieldValue(InputMoney2_in,"২০০০");
         for(int i=0; i<=7; i++){
             clickElement(canceloptions1_c);
-            Thread.sleep(1500);
+            Thread.sleep(1000);
         }
         KeybordInputSelectOption(khoroch1_in_enter,"এসবিপি ঋণ (10601015)");
-        FieldValue(khorochInputMoney1_in,"৫০০০");
-        Thread.sleep(2000);
+        FieldValue(khorochInputMoney1_in,"২০০০");
+        //Thread.sleep(2000);
         KeybordInputSelectOption(Khoroch2_in_enter,"ভাড়া এবং কর(40101043)");
-        FieldValue(KhorochInputMoney2_in,"৫০০০");
+        FieldValue(KhorochInputMoney2_in,"২০০০");
         for(int i=0; i<=7; i++){
             clickElement(canceloptions2_c);
-            Thread.sleep(1500);
+            Thread.sleep(1000);
         }
         //clickElement(SaveToNextPage);
         Thread.sleep(2000);
         //WaitElementVisible(SaveToNextPage);
         DropDownSelectByVisibleText(BudgetYear2_s,"২০২৫-২০২৬");
         KeybordInputSelectOption(joma11_in_enter,"আয়(30000000)");
-        FieldValue(InputMoney11_in,"৫০০০");
-        Thread.sleep(2000);
+        FieldValue(InputMoney11_in,"২০০০");
+        //Thread.sleep(2000);
         KeybordInputSelectOption(joma22,"মেয়াদী জমা(20301027)");
-        FieldValue(InputMoney22_in,"৫০০০");
+        FieldValue(InputMoney22_in,"২০০০");
         for(int i=0; i<=7; i++){
             clickElement(canceloptions11_c);
-            Thread.sleep(1500);
+            Thread.sleep(1000);
         }
         KeybordInputSelectOption(khoroch11_in_enter,"এসবিপি ঋণ (10601015)");
-        FieldValue(khorochInputMoney11_in,"৫০০০");
-        Thread.sleep(2000);
+        FieldValue(khorochInputMoney11_in,"২০০০");
+        //Thread.sleep(2000);
         KeybordInputSelectOption(Khoroch22_in_enter,"ভাড়া এবং কর(40101043)");
-        FieldValue(KhorochInputMoney22_in,"৫০০০");
+        FieldValue(KhorochInputMoney22_in,"২০০০");
         for(int i=0; i<=7; i++){
             clickElement(canceloptions22_c);
-            Thread.sleep(1500);
+            Thread.sleep(1000);
         }
         takeScreenshot("joma - khoroch");
         //clickElement(SaveToNextPage);

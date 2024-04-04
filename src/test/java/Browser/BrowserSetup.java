@@ -34,25 +34,23 @@ public class BrowserSetup {
 		BrowserSetup.DRIVER_LOCAL.set(driver);
 	}
 	public static WebDriver getBrowser(String BrowserName) {
-		switch (BrowserName.toLowerCase()) {
-		case "chrome":
+		if ("chrome".equals(BrowserName.toLowerCase())) {
 			ChromeOptions option1 = new ChromeOptions();
 			option1.addArguments("--remote-allow-origins=*");
 			WebDriverManager.chromedriver().setup();
 			return new ChromeDriver(option1);
-		case "edge":
+		} else if ("edge".equals(BrowserName.toLowerCase())) {
 			EdgeOptions option2 = new EdgeOptions();
 			option2.addArguments("--remote-allow-origins=*");
 			WebDriverManager.edgedriver().setup();
 			return new EdgeDriver(option2);
-		case "firefox":
+		} else if ("firefox".equals(BrowserName.toLowerCase())) {
 			FirefoxOptions option3 = new FirefoxOptions();
 			option3.addArguments("--remote-allow-origins=*");
 			WebDriverManager.firefoxdriver().setup();
 			return new FirefoxDriver(option3);
-		default:
-			throw new RuntimeException("Browser Not found");
 		}
+		throw new RuntimeException("Browser Not found");
 	}
 	
 	@BeforeSuite
@@ -70,53 +68,45 @@ public class BrowserSetup {
 	
 	
 	
-	 //public ExtentReports extent;
-    static ExtentReports report;
-    public ExtentTest test;
-
-
-    @BeforeTest
-    public void setExtent(){
-
-        report = new ExtentReports("htmlReports/RDCD.html");
-        test = report.startTest("Automation Test");
-
-        report.addSystemInfo("Server", "-------------");
-        report.addSystemInfo("Module", "-------------");
-        report.addSystemInfo("Feature", "-------------");
-        report.addSystemInfo("Activity", "-------------");
-        report.addSystemInfo("QA Engineer", "Sakif Abdullah");
-
-        report.addSystemInfo("Framework", "Selenium");
-        report.addSystemInfo("Language", "Java");
-        report.addSystemInfo("IDEA", "IntelliJ IDEA");
-        report.addSystemInfo("Browser", "Chrome");
-        report.addSystemInfo("Browser", "Chrome");
-
-
-    }
-
-    @AfterTest
-    public void endReport() {
-        report.endTest(test);
-        report.flush();
-    }
-// ==================================== For Reporting Purpose (End) =========================================
-
-	
-    // capture screenshots in Extent Report
-    public static String capture(WebDriver driver) throws IOException {
-        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File Dest = new File("failureSS/"+ "screenshot_failure.png");
-        String errflpath = Dest.getAbsolutePath();
-        FileUtils.copyFile(scrFile, Dest);
-        return errflpath;
-    }
-
-	
-	
-	
-	
+//	 //public ExtentReports extent;
+//    static ExtentReports report;
+//    public ExtentTest test;
+//
+//
+//    @BeforeTest
+//    public void setExtent(){
+//
+//        report = new ExtentReports("htmlReports/RDCD.html");
+//        test = report.startTest("Automation Test");
+//
+//        report.addSystemInfo("Server", "-------------");
+//        report.addSystemInfo("Module", "-------------");
+//        report.addSystemInfo("Feature", "-------------");
+//        report.addSystemInfo("Activity", "-------------");
+//        report.addSystemInfo("QA Engineer", "Sakif Abdullah");
+//
+//        report.addSystemInfo("Framework", "Selenium");
+//        report.addSystemInfo("Language", "Java");
+//        report.addSystemInfo("IDEA", "IntelliJ IDEA");
+//        report.addSystemInfo("Browser", "Chrome");
+//        report.addSystemInfo("Browser", "Chrome");
+//    }
+//
+//    @AfterTest
+//    public void endReport() {
+//        report.endTest(test);
+//        report.flush();
+//    }
+//    // ==================================== For Reporting Purpose (End) =========================================
+//
+//    // capture screenshots in Extent Report
+//    public static String capture(WebDriver driver) throws IOException {
+//        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//        File Dest = new File("failureSS/"+ "screenshot_failure.png");
+//        String errflpath = Dest.getAbsolutePath();
+//        FileUtils.copyFile(scrFile, Dest);
+//        return errflpath;
+//    }
 }
 
 

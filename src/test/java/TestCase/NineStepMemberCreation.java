@@ -29,8 +29,6 @@ public class NineStepMemberCreation extends BrowserSetup{
 	//public By nextPage_c = By.xpath("//button[contains(text(),'পরবর্তী পাতায়')]");
 	
 	
-	
-	
 	MemberOne mOne = new MemberOne();
 	MemberTwo mtwo =new MemberTwo();
 	MemberThree mthree = new MemberThree();
@@ -68,7 +66,7 @@ public class NineStepMemberCreation extends BrowserSetup{
 	public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
 		log.Baboharkarilogin();
 		//SamityName Input in First Page
-		p1.firstpageInputs("ইরা ইনফোটেক পারুল আপু আরডিসিডি সমবায় সমিতি-2");
+		p1.firstpageInputs("flow সমিতি 01-4/4/2024");
 		Thread.sleep(2000);
 		//newP2.Page2();
 		UpPage2.Page2();
@@ -76,7 +74,6 @@ public class NineStepMemberCreation extends BrowserSetup{
 		//Thread.sleep(5000);
 		//p2.secondPageDone();
 		//Thread.sleep(5000);
-		//method.WaitElementVisible(secondPage_w);
 		//Thread.sleep(2000);
 		////method.ScrollDown();
 		//method.clickElement(nextPage_c);
@@ -103,17 +100,12 @@ public class NineStepMemberCreation extends BrowserSetup{
 		p4.ComityPodobiPage();
 		p5.ArthikinfoPage();
 		p6.Samity_JomaKorochPage();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		p7.SamityArthikInfoPage7();
 		p8.BudgeSelection();
 		p9.DocumentAttachments();
-		p10.FinalPage();
-
-
+		//p10.FinalPage();
 		//p3.page3();
 		//smp.OsompurnoAbedonfirstpageInputs();
 		}
-	
-	
-
 }

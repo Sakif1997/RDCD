@@ -33,11 +33,7 @@ public class LoginPages extends Methods{
 		DropDownSelectByVisibleText(Dropdown, "সমবায় অধিদপ্তর");
 		takeScreenshot("login");
 		clickElement(loginButton);
-		WaitElementVisible(LandHomepage_w);
-		
-		
-		
-		
+		WaitElementVisible(LandHomepage_w);	
 	}
 	
 	//Login By user
@@ -51,9 +47,6 @@ public class LoginPages extends Methods{
 		takeScreenshot("login");
 		clickElement(loginButton);
 		WaitElementVisible(UserLandhomepage_E);
-		
-		
-		
 	}
 
 }

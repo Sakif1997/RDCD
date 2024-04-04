@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 
 import java.awt.*;
 
+import static Browser.BrowserSetup.getDriver;
+
 public class SamityDocumentPage9 extends Methods {
     public By page9_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
     public By DocumentType_s = By.name("documentTypeId");
@@ -40,6 +42,8 @@ public class SamityDocumentPage9 extends Methods {
 
 
         //অফিস ভাড়ার চুক্তিপত্র
+        getDriver().navigate().refresh();
+        Thread.sleep(2000);
         DropDownSelectByVisibleText(DocumentType_s,"অফিস ভাড়ার চুক্তিপত্র");
         FieldValue(DocumentReferrence_in,"112233445566");
         FieldValue(MeyadStart_in,"22012024");
@@ -55,6 +59,8 @@ public class SamityDocumentPage9 extends Methods {
 
 
         //চালান কপি
+        getDriver().navigate().refresh();
+        Thread.sleep(2000);
         DropDownSelectByVisibleText(DocumentType_s,"চালান কপি");
         FieldValue(DocumentReferrence_in,"112233445566");
         FieldValue(MeyadStart_in,"22012024");

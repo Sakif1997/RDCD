@@ -105,10 +105,10 @@ public class MemberThree extends Methods{
 		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\3.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\signature.png");
+		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
 		clickElement(PersonDOcumentSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\Document.png");
+		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
 		Thread.sleep(2000);
 		takeScreenshot("Member Include");
 		clickElement(SaveButton_c);
