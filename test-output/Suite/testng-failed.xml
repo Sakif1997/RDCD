@@ -3,13 +3,27 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCase.NameClearanceTest">
+      <class name="TestCase.StageServerNameClearanceTest">
         <methods>
           <include name="NameClearance"/>
           <include name="setBrowser"/>
           <include name="quitBrowser"/>
         </methods>
-      </class> <!-- TestCase.NameClearanceTest -->
+      </class> <!-- TestCase.StageServerNameClearanceTest -->
+      <class name="TestCase.StageServerSamityAcceptance">
+        <methods>
+          <include name="setBrowser"/>
+          <include name="quitBrowser"/>
+          <include name="NewSamityNameApproval"/>
+        </methods>
+      </class> <!-- TestCase.StageServerSamityAcceptance -->
+      <class name="TestCase.StageServerNineStepMemberCreation">
+        <methods>
+          <include name="UpToAddMember"/>
+          <include name="setBrowser"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- TestCase.StageServerNineStepMemberCreation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

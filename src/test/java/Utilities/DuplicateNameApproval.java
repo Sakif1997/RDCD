@@ -37,12 +37,10 @@ public class DuplicateNameApproval extends Methods{
 		//clickElement(SaveButton_c);// change every run
 		Thread.sleep(2000);
 		 // switch to alert
-
 		WaitElementVisible(DUplicateSamiti_w);
 		String alerttext = getText(DUplicateSamiti_w);
 		System.out.println(alerttext);
 		takeScreenshot("Not allowing same name");
-		
 		Thread.sleep(5000);
 		
 		clickWaitElement(profileicon_c);

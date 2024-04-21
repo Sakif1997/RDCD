@@ -32,6 +32,7 @@ public class NameClearancePage extends Methods{
 		clickElement(prathomic_c);
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(selectBivag_D, "খুলনা");
+		//Thread.sleep(2000);
 		DropDownSelectByVisibleText(selectjela_D,"যশোর");
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(selectoffice_D, "উপজেলা সমবায় অফিস, মণিরামপুর, যশোর");

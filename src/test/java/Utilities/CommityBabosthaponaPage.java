@@ -1,8 +1,14 @@
 package Utilities;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+
+import javax.swing.*;
+
+import static Browser.BrowserSetup.getDriver;
 
 public class CommityBabosthaponaPage extends Methods{
+
     public By MemberSelect_d = By.name("organizerp");
     //জিহাদ
     //নিলা
@@ -40,20 +46,23 @@ public class CommityBabosthaponaPage extends Methods{
     //সহ-সভাপতি
     public By MemberSixPodobi_d = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/table[1]/tbody[1]/tr[6]/td[3]/div[1]/div[1]/select[1]");
     //সদস্য
-    public By SaveButton_c = By.xpath("//button[@aria-label='সংরক্ষন করুন']");
+    public By SaveButton_c = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/button[2]");
 
     public By SamityNationalButton_c =By.xpath("//input[@aria-label='controlled']");
     public By natinalSamityPersonSelect_drop =By.name("signingp");
+
+    public By clickanything = By.xpath("//*[name()='path' and contains(@d,'M20 4H4c-1')]");
     public void ComityPodobiPage() throws InterruptedException{
+       // Thread.sleep(4000);
+      //  getDriver().navigate().refresh();
         DropDownSelectByVisibleText(MemberSelect_d,"জিহাদ");
         DropDownSelectByVisibleText(ConnectionInfo_d,"নিলা");
-        clickElement(SamityNationalButton_c);
-
-
-        DropDownSelectByVisibleText(natinalSamityPersonSelect_drop,"অর্ণব");
+        //clickElement(SamityNationalButton_c);
+       // DropDownSelectByVisibleText(natinalSamityPersonSelect_drop,"অর্ণব");
         DropDownSelectByVisibleText(CommityMemberNumber_d,"৬ জন");
 
         Thread.sleep(4000);
+//        ScrollDown();
         DropDownSelectByVisibleText(MemberOne_d,"জিহাদ");
         DropDownSelectByVisibleText(MemberTwo_d,"নিলা");
         DropDownSelectByVisibleText(MemberThree_d,"নাইম");
@@ -66,9 +75,23 @@ public class CommityBabosthaponaPage extends Methods{
         DropDownSelectByVisibleText(MemberThreePodobi_d,"কোষাধ্যক্ষ");
         DropDownSelectByVisibleText(MemberFourPodobi_d,"ট্রেজারার");
         DropDownSelectByVisibleText(MemberFivePodobi_d,"সহ-সভাপতি");
+        Thread.sleep(2000);
         DropDownSelectByVisibleText(MemberSixPodobi_d,"সদস্য");
-        takeScreenshot("Members Designation");
-        Thread.sleep(3000);
-        clickElement(SaveButton_c);
+        takeScreenshot("Members DScrollDown()esignation");
+        Thread.sleep(2000);
+        clickElement(clickanything);
+        Thread.sleep(10000);
+
+        ScrollUp();
+        clickElement(SamityNationalButton_c);
+        DropDownSelectByVisibleText(natinalSamityPersonSelect_drop,"অর্ণব");
+
+
+        //ScrollDown();
+       // DropDownSelectByVisibleText(natinalSamityPersonSelect_drop,"অর্ণব");
+        //DropDownSelectByVisibleText(CommityMemberNumber_d,"৬ জন");
+        //ScrollDownByPageElem(SaveButton_c);
+     // clickElement(SaveButton_c);
+        //clickWaitElement(SaveButton_c);
     }
 }

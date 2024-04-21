@@ -79,9 +79,16 @@ public class Methods {
 			JavascriptExecutor js =(JavascriptExecutor)getDriver();
 			js.executeScript("window.scrollTo(document.body.scrollHeight,0)");
 		}
+		JavascriptExecutor js;
 		public void ScrollDown() {
-			JavascriptExecutor js = (JavascriptExecutor)getDriver();
+			js = (JavascriptExecutor)getDriver();
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+		}
+		public void ScrollDownByPageElem(By locator){
+			js = (JavascriptExecutor)getDriver();
+			// Scrolling down the page till the element is found
+			js.executeScript("arguments[0].scrollIntoView();", locator);
+
 		}
 		public void DropDownSelectElement(By locator, int serialnumber) {
 			Select	select = new Select(getElement(locator));
