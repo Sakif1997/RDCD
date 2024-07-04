@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import static Browser.BrowserSetup.*;
 public class NibondhonRequestPage10 extends Methods{
     public By ChalanNum_in = By.name("invoiceNo");
-    public By ChalanDate_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[11]/div[1]/div[3]/div[2]/div[1]/div[1]/input[1]");
+    public By ChalanDate_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[11]/div[1]/div[3]/div[2]/div[1]/div[1]/input[1]");
     public By SonodRequestTo_cl = By.xpath("//span[contains(text(),'উপজেলা অফিসের মাধ্যমে')]");
     public By AgreeButton_c = By.xpath("//div[@class='MuiStack-root css-u4p24i']");
     public By FinalRequestSend_c = By.xpath("//button[@aria-label='আবেদনের চূড়ান্ত জমা']");
@@ -12,7 +12,7 @@ public class NibondhonRequestPage10 extends Methods{
 
 
     public void FinalPage() throws InterruptedException{
-        getDriver().navigate().refresh();
+        //getDriver().navigate().refresh();
         Thread.sleep(2000);
         ScrollDown();
         Thread.sleep(2000);
