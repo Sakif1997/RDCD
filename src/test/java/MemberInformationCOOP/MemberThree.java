@@ -17,8 +17,8 @@ public class MemberThree extends Methods{
 	//৯০৭৬৭৭৪৪৩৮
 	//৯০৭৬৭৭৪৪৩৫
 	//৯০৭৬৭৭৪৪৩৭
-	
-	public By jonmotarik_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1]");
+
+	public By jonmotarik_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1]");
 	//22011989
 	public By NameEnglish_in= By.name("memberName");
 	//ZIHAD
@@ -49,7 +49,7 @@ public class MemberThree extends Methods{
 //	রুকাইয়া
 	public By MobileName_in= By.name("mobile");
 	//01718192871
-	public By MemberApplyDate_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/input[1]");
+	public By MemberApplyDate_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/input[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[9]/div[1]/div[1]/input[1]");
 
 	public By GenderMale_c = By.xpath("//span[contains(text(),'পুরুষ')]");
 	public By GenderFeMale_c = By.xpath("//span[contains(text(),'মহিলা')]");
@@ -61,14 +61,14 @@ public class MemberThree extends Methods{
 	//ইসলাম
 	public By Unmarried_drop =By.name("maritalStatusId");
 	//অবিবাহিত
-	public By upojila_drop =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/select[1]");
+	public By upojila_drop =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/select[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/select[1]");
 	//মণিরামপুর
-	public By thana_drp =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/select[1]");
+	public By thana_drp =By.xpath(" /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/select[1]");
 	//মণিরামপুর
 	public By SameAddress_c =By.xpath("//input[@type='checkbox']");
-	public By PersonImageSelect_c =By.xpath("//label[@for='0']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
-	public By PersonSignatureSelect_c =By.xpath("//label[@for='1']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
-	public By PersonDOcumentSelect_c =By.xpath("//label[@for='2']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
+	public By PersonImageSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/label[1]/span[1] | //label[@for='0']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
+	public By PersonSignatureSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[2]/label[1]/span[1] | //label[@for='1']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
+	public By PersonDOcumentSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[3]/div[1]/div[2]/label[1]/span[1] | //label[@for='2']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
 
 	public By SaveButton_c =By.xpath("//button[@aria-label='সংরক্ষন করুন']");
 	public By x =By.xpath("");

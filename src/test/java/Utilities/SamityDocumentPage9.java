@@ -14,9 +14,9 @@ public class SamityDocumentPage9 extends Methods {
     //অফিস ভাড়ার চুক্তিপত্র
     //চালান কপি
     public By DocumentReferrence_in = By.name("docReferenceNo");
-    public By MeyadStart_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1]");
+    public By MeyadStart_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1]");
     //22012024
-    public By MeyadEnd_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/input[1]");
+    public By MeyadEnd_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/input[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/input[1]");
     //23012025
     public By DocumentPic_c = By.xpath("//span[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium btn btn-primary css-1hw9j7s']");
     public By SaveButton_c = By.xpath("//button[@aria-label='সংরক্ষন করুন']");
@@ -26,7 +26,6 @@ public class SamityDocumentPage9 extends Methods {
 
     UploadMethod up = new UploadMethod();
     public void DocumentAttachments() throws InterruptedException, AWTException {
-
         //সাংগঠনিক সভার রেজুলেশন
         DropDownSelectByVisibleText(DocumentType_s,"সাংগঠনিক সভার রেজুলেশন");
         FieldValue(DocumentReferrence_in,"112233445566");
@@ -78,7 +77,6 @@ public class SamityDocumentPage9 extends Methods {
         clickElement(NextPage_c);
         Thread.sleep(2000);
         WaitElementVisible(Page10_v);
-
     }
 
 }

@@ -4,21 +4,22 @@ import org.openqa.selenium.By;
 
 public class SamityNibondhonFirstPage extends Methods{
 	public By SamityNibondhon_click = By.xpath("//span[contains(text(),'সমিতি নিবন্ধনের আবেদন')]");
-	public By NotunAbedon_c = By.xpath("//span[contains(text(),'নতুন আবেদন')]");
+	//public By NotunAbedon_c = By.xpath("//span[contains(text(),'নতুন আবেদন')]");
 	public By Prathomic_c = By.xpath("//input[@value='P']");
 	public By SamityNameSelect_DropdownSelect = By.name("samityName");
+
 	//Foysal
-	public By Union_dropdown = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1]");
-	//মণিরামপুর                             /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1]
+	public By Union_dropdown = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1] |  /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1]");
+	//মণিরামপুর                           
 	public By gram_in = By.name("samityDetailsAddress");
 	public By gram_dropdown = By.name("memberAreaType");
 	//জেলা
-	public By gram1_dropdown = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[5]/div[1]/div[1]/input[1]");
+	public By gram1_dropdown = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1]");
 	//মণিরামপুর                              /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[4]/div[1]/div[1]/select[1]
-	     //  public By gram1_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[5]/div[1]/div[1]/input[1]");
+	public By gram1_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[5]/div[1]/div[1]/input[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[2]/div[5]/div[1]/div[1]/input[1]");
 	//মনিরামপুর
 	public By SameELakaInput_click = By.xpath("//input[@name='onChecked']");
-	public By SamityTarik_click_input = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]");
+	public By SamityTarik_click_input = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1] | /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]/div[1]/div[1]/input[1]");
 	//30224
 	public By VortiFee_input = By.name("memberAdmissionFee");
 	//2000
@@ -42,7 +43,7 @@ public class SamityNibondhonFirstPage extends Methods{
 //	
 	public void firstpageInputs(String SamityName) throws InterruptedException{
 		clickElement(SamityNibondhon_click);
-		clickWaitElement(NotunAbedon_c);
+		//clickWaitElement(NotunAbedon_c);
 		Thread.sleep(2000);
 		clickElement(Prathomic_c);
 		
@@ -57,11 +58,11 @@ public class SamityNibondhonFirstPage extends Methods{
 		
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(Union_dropdown, "মণিরামপুর");
-		FieldValue(gram_in, "মনিরামপুর");
+		FieldValue(gram_in, "মণিরামপুর");
 		DropDownSelectByVisibleText(gram_dropdown, "গ্রাম/মহল্লা");
 		Thread.sleep(1000);
 		FieldValue(gram1_dropdown, "মণিরামপুর");
-//		//FieldValue(gram1_in, "মনিরামপুর");
+		FieldValue(gram1_in, "মনিরামপুর");
 		clickElement(SameELakaInput_click);
 		Thread.sleep(2000);
 		ScrollDown();
