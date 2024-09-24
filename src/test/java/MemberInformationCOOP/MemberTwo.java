@@ -41,7 +41,7 @@ public class MemberTwo extends Methods{
 	//মাহমুদ
 	//অর্ণব হোসাইন 
 	public By MotherName_in= By.name("motherName");
-//	ফাতেমা
+	//	ফাতেমা
 //	আয়েশা
 //	জেহান
 //	সুমাইয়া
@@ -95,7 +95,7 @@ public class MemberTwo extends Methods{
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		//Thread.sleep(2000);
-		//clickElement(SameAddress_c);
+		Checkbox(SameAddress_c);
 		
 		//Thread.sleep(2000);
 		clickElement(PersonImageSelect_c);

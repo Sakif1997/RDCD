@@ -67,7 +67,7 @@ public class SamityNibondhonFirstPage extends Methods{
 		Thread.sleep(2000);
 		ScrollDown();
 		clickElement(SamityTarik_click_input);
-		FieldValue(SamityTarik_click_input, "010123");
+		FieldValue(SamityTarik_click_input, "01012023");
 		FieldValue(VortiFee_input, "2000");
 		FieldValue(ShareShonkha_input, "12");
 		FieldValue(SharePrice_input, "100");

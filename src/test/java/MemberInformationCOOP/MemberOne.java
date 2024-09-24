@@ -96,7 +96,7 @@ public class MemberOne extends Methods{
 		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
 		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		Thread.sleep(2000);
-		clickElement(SameAddress_c);
+		Checkbox(SameAddress_c);
 		
 		//Thread.sleep(2000);
 		clickElement(PersonImageSelect_c);

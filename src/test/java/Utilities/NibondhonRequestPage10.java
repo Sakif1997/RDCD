@@ -1,7 +1,7 @@
 package Utilities;
 
 import org.openqa.selenium.By;
-import static Browser.BrowserSetup.*;
+import static Browser.BrowserSetupNew.*;
 public class NibondhonRequestPage10 extends Methods{
     public By ChalanNum_in = By.name("invoiceNo");
     public By ChalanDate_in = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[11]/div[1]/div[3]/div[2]/div[1]/div[1]/input[1]");

@@ -5,11 +5,9 @@
     <classes>
       <class name="TestCase.NameClearanceTest">
         <methods>
-          <include name="NameClearance"/>
-          <include name="setBrowser"/>
-          <include name="setExtent"/>
-          <include name="endReport"/>
           <include name="quitBrowser"/>
+          <include name="setBrowser"/>
+          <include name="NameClearance"/>
         </methods>
       </class> <!-- TestCase.NameClearanceTest -->
     </classes>

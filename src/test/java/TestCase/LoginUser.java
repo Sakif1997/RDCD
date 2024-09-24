@@ -2,10 +2,10 @@ package TestCase;
 
 import org.testng.annotations.Test;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import Utilities.LoginPages;
 
-public class LoginUser extends BrowserSetup{
+public class LoginUser extends BrowserSetupNew{
 	LoginPages login =new LoginPages();
 	@Test(description = "Login By User")
 	public void User() throws InterruptedException{

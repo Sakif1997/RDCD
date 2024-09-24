@@ -1,6 +1,6 @@
 package TestCase;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import MemberInformationCOOP.*;
 import Utilities.*;
 import org.openqa.selenium.By;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.io.IOException;
 
-public class StageServerNineStepMemberCreation extends BrowserSetup {
+public class StageServerNineStepMemberCreation extends BrowserSetupNew {
     public By CommityPage = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
     public By SodossoNibondhon_c = By.xpath("//button[@aria-label='আগের পাতায়']");
     public By SodossoNibondhonPage_c =By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
@@ -65,7 +65,7 @@ public class StageServerNineStepMemberCreation extends BrowserSetup {
     public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
         log.Baboharkarilogin();
         //SamityName Input in First Page
-        p1.firstpageInputs("Stage server flow সমিতি 04-19/5/2024");
+        p1.firstpageInputs("Stage server flow সমিতি 04-23/9/2024");
         Thread.sleep(2000);
         //newP2.Page2();
         UpPage2.Page2();

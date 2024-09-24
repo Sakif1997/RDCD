@@ -1,11 +1,11 @@
 package TestCase;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import Utilities.LoginPages;
 import Utilities.NameApprovalPage;
 import org.testng.annotations.Test;
 
-public class StageServerSamityAcceptance extends BrowserSetup {
+public class StageServerSamityAcceptance extends BrowserSetupNew {
     LoginPages login =new LoginPages();
     NameApprovalPage NMP = new NameApprovalPage();
     @Test(description = "নতুন সমিতি অনুমোদন By উপজেলা সমবায় অফিসার")

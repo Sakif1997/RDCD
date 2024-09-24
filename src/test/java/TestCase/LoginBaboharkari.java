@@ -5,12 +5,13 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
+import Browser.BrowserSetupNew;
+
 //import com.relevantcodes.extentreports.LogStatus;
 
-import Browser.BrowserSetup;
 import Utilities.LoginPages;
 
-public class LoginBaboharkari extends BrowserSetup{
+public class LoginBaboharkari extends BrowserSetupNew{
 	LoginPages login =new LoginPages();
 	@Test(description = "login by baboharkari")
 	public void Baboharkarilogin() throws InterruptedException, IOException{

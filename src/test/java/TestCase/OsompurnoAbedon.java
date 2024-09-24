@@ -1,6 +1,6 @@
 package TestCase;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import MemberInformationCOOP.*;
 import Utilities.*;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.io.IOException;
 
-public class OsompurnoAbedon extends BrowserSetup {
+public class OsompurnoAbedon extends BrowserSetupNew {
     LoginBaboharkari log = new LoginBaboharkari();
     StageLoginBaboharkari logstage = new StageLoginBaboharkari();
 
@@ -41,41 +41,41 @@ public class OsompurnoAbedon extends BrowserSetup {
         log.Baboharkarilogin();//for local server
        // logstage.Baboharkarilogin();//for stage server
 
-        oap.OsompurnoAbedonfirstpageInputs("flow সমিতি 001-30/6/2024");//connect
+        oap.OsompurnoAbedonfirstpageInputs("flow সমিতি 008-07/7/2024");//connect
        // oap.AfterAddMemberPage3();
        // oap.ComityPodobiPage();
        // oap.ArthikinfoPage();
        //// oap.SamityJomaKorochPage();
         //oap.SamityArthikInfoPage7();
        // oap1.BudgeSelection();
-//        p3.page3();
+         // p3.page3();
 //        mOne.addMember();
 //        p3.page3();
 //        mtwo.addMember();
 //        p3.page3();
 //        mthree.addMember();
-//        p3.page3();
-//        mFour.addMember();
-//        p3.page3();
-//        mFIve.addMember();
+        ///p3.page3();
+        //mFour.addMember();
+        p3.page3();
+        mFIve.addMember();
 //        getDriver().navigate().refresh();
         //Thread.sleep(4000);
 //		method.clickElement(NibondhonPageIcon_c);
 //		method.clickWaitElement(NewAddMember_wc);
 //		method.clickWaitElement(AddmemberPage_w);
         //method.ScrollUp();
-      //  p3.page3();
-       // mSix.addMember();
-       // getDriver().navigate().refresh();
-        //p3.AfterAddMemberPage3();
+        p3.page3();
+        mSix.addMember();
+        getDriver().navigate().refresh();
+        p3.AfterAddMemberPage3();
 
-       // p4.ComityPodobiPage();
-       // p5.ArthikinfoPage();
-        //p6.Samity_JomaKorochPage();
-        //Thread.sleep(2000);
-        //p7.SamityArthikInfoPage7();
-        //p8.BudgeSelection();
-        //p9.DocumentAttachments();
+        p4.ComityPodobiPage();
+        p5.ArthikinfoPage();
+        p6.Samity_JomaKorochPage();
+        Thread.sleep(2000);
+        p7.SamityArthikInfoPage7();
+        p8.BudgeSelection();
+        p9.DocumentAttachments();
         p10.FinalPage();
     }
 }
