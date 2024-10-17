@@ -3,6 +3,8 @@ package Utilities;
 import org.openqa.selenium.By;
 
 public class OsompurnoAbedonPages extends Methods{
+    public By SamityBabosthapona_Click = By.xpath("//span[contains(text(),'সমিতি ব্যবস্থাপনা')]");
+
     public By SamityNibondhon_click = By.xpath("//span[contains(text(),'সমিতি নিবন্ধনের আবেদন')]");
     public By osompurnoButton_c = By.xpath("//span[contains(text(),'অসম্পূর্ণ আবেদন')]");
     public By OsompurnoSamityname_w = By.name("projectId");
@@ -12,7 +14,8 @@ public class OsompurnoAbedonPages extends Methods{
     //  public By NextPage_w_c = By.xpath("//button[contains(text(),'পরবর্তী পাতায়')]");
 
     public void OsompurnoAbedonfirstpageInputs(String OsompurnoSamityName) throws InterruptedException{
-        clickElement(SamityNibondhon_click);
+        clickWaitElement(SamityBabosthapona_Click);
+        clickWaitElement(SamityNibondhon_click);
         clickWaitElement(osompurnoButton_c);
         DropDownSelectByVisibleText(OsompurnoSamityname_w,OsompurnoSamityName);
         WaitElementVisible(CommityBabosthaponaPage_w);

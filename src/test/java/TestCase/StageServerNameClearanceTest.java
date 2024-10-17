@@ -13,7 +13,7 @@ public class StageServerNameClearanceTest extends BrowserSetupNew {
     public void NameClearance() throws InterruptedException, IOException {
         login.Baboharkarilogin();
         //Enter Name Every time
-        nc.NameClearanceApply("Stage server flow সমিতি 04-23/9/2024");
+        nc.NameClearanceApply("Stage server flow সমিতি 04-27/9/2024");
     }
 
 }

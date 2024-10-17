@@ -10,11 +10,14 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserSetupNew {
 	private static String BrowserName = System.getProperty("browser", "Edge");
 	private static final ThreadLocal<WebDriver> DRIVER_LOCAL = new ThreadLocal<>();
+
+
 	public static WebDriver getDriver() {
 		return DRIVER_LOCAL.get();
 	}

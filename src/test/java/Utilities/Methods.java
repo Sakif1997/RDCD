@@ -109,6 +109,7 @@ public class Methods {
 		    WebElement option = dropdown.findElement(optionLocator);
 		    option.click();
 		}
+		
 		public void DropDownSelectByVisibleText(By locator, String text) {
 			WebElement dropDownField = getElement(locator);
 			Select select = new Select(dropDownField);
@@ -153,6 +154,7 @@ public class Methods {
 			action.keyDown(Keys.ENTER);
 			action.build().perform();
 		}
+		
 
 		public void Checkbox(By locator){
 			if (!getElement(locator).isSelected()){

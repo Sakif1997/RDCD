@@ -15,7 +15,7 @@ public class LoginBaboharkari extends BrowserSetupNew{
 	LoginPages login =new LoginPages();
 	@Test(description = "login by baboharkari")
 	public void Baboharkarilogin() throws InterruptedException, IOException{
-		getDriver().get("http://10.11.200.30:3050/login");
+		getDriver().get("http://10.11.200.30:3090/login");
 		login.loginAsBaboharkari("01686026037");
 		//login.loginAsBaboharkari("200000071938");
 		Thread.sleep(2000);

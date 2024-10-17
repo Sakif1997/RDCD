@@ -24,6 +24,4 @@ public class ThirdPage extends Methods{
 		WaitElementVisible(CommityBabosthaponaPage_w);
 		Thread.sleep(2000);
 	}
-
-
 }
