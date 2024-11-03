@@ -93,8 +93,8 @@ public class MemberThree extends Methods{
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(religion_drop, "ইসলাম");
 		DropDownSelectByVisibleText(Unmarried_drop, "অবিবাহিত");
-		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
-		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
+		//DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
+		//DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		Thread.sleep(2000);
 		Checkbox(SameAddress_c);
 		
@@ -102,13 +102,13 @@ public class MemberThree extends Methods{
 		clickElement(PersonImageSelect_c);
 		Thread.sleep(2000);
 
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\3.png");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\3.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
 		clickElement(PersonDOcumentSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
 		Thread.sleep(2000);
 		takeScreenshot("Member Include");
 		clickElement(SaveButton_c);

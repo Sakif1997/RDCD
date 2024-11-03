@@ -38,32 +38,32 @@ public class OsompurnoAbedon extends BrowserSetupNew {
 
     @Test
     public void Osompurno() throws InterruptedException, IOException, AWTException {
-        log.Baboharkarilogin();//for local server
-      // logstage.Baboharkarilogin();//for stage server
+       // log.Baboharkarilogin();//for local server
+      logstage.Baboharkarilogin();//for stage server
 
-        oap.OsompurnoAbedonfirstpageInputs("flow সমিতি central 003- 10/16/2024");//connect
+        oap.OsompurnoAbedonfirstpageInputs("Test By Documents");//connect
        // oap.AfterAddMemberPage3();
        // oap.ComityPodobiPage();
        // oap.ArthikinfoPage();
        //// oap.SamityJomaKorochPage();
         //oap.SamityArthikInfoPage7();
         //oap1.BudgeSelection();
-//        p3.page3();
-//        mOne.addMember();
-//        p3.page3();
-//        mtwo.addMember();
-//        p3.page3();
-//        mthree.addMember();
-//        p3.page3();
-//        mFour.addMember();
-//        p3.page3();
-//        mFIve.addMember();
-//        getDriver().navigate().refresh();
-//
-//        p3.page3();
-//        mSix.addMember();
-//        getDriver().navigate().refresh();
-//        p3.AfterAddMemberPage3();
+        p3.page3();
+        mOne.addMember();
+        p3.page3();
+        mtwo.addMember();
+        p3.page3();
+        mthree.addMember();
+        p3.page3();
+        mFour.addMember();
+        p3.page3();
+        mFIve.addMember();
+        getDriver().navigate().refresh();
+
+        p3.page3();
+        mSix.addMember();
+        getDriver().navigate().refresh();
+        p3.AfterAddMemberPage3();
 
         p4.ComityPodobiPage();
         p5.ArthikinfoPage();

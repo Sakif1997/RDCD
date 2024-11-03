@@ -66,15 +66,14 @@ public class NineStepMemberCreation extends BrowserSetupNew{
 	public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
 		log.Baboharkarilogin();
 		//SamityName Input in First Page
-		p1.firstpageInputs("flow সমিতি central 004- 10/16/2024");
+		p1.firstpageInputs("Test by law-10/31/2024");
 		Thread.sleep(2000);
 		//newP2.Page2();
 		UpPage2.Page2();
 		//method.clickElement(secondPageicon_c);
 		//Thread.sleep(5000);
 		//p2.secondPageDone();
-		//Thread.sleep(5000);
-		//Thread.sleep(2000);
+
 		////method.ScrollDown();
 		//method.clickElement(nextPage_c);
 		p3.page3();

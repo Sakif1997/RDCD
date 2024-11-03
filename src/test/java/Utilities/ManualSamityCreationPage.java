@@ -1,6 +1,7 @@
 package Utilities;
 
 import MemberInformationCOOP.UploadMethod;
+
 import org.openqa.selenium.By;
 
 import java.awt.*;
@@ -46,7 +47,8 @@ public class ManualSamityCreationPage extends Methods{
     public By kormokortaPodobi_drop = By.name("officerId");
     //সহকারী পরিদর্শক - মোঃ রফিকুজ্জামান
     public By Savebutton = By.xpath("//button[contains(text(),'সংরক্ষন করুন')]");
-    UploadMethod upload = new UploadMethod();
+    //UploadMethod upload = new UploadMethod();
+    //UploadMethod upload = new UploadMethod();
     public void SamityOnlineForManual(String SamityName) throws InterruptedException, AWTException {
         WaitElementVisible(LandingPage_w);
         clickElement(SamityBabosthaponaOption_cl);
@@ -74,7 +76,7 @@ public class ManualSamityCreationPage extends Methods{
         FieldValue(DocumentNumber_in,"12121212");
         clickElement(FileAdd_folderupload_c);
         Thread.sleep(2000);
-        upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
+        UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
         Thread.sleep(2000);
         DropDownSelectByVisibleText(kormokortaPodobi_drop,"সহকারী পরিদর্শক - মোঃ রফিকুজ্জামান");
         clickElement(Savebutton);

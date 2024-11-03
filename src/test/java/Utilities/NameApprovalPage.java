@@ -18,8 +18,8 @@ public class NameApprovalPage extends Methods{
 	// Samity Acceptance
 	//SamityAcceptance.java
 	public void NameApproveSamity() throws InterruptedException{
-		WaitElementVisible(LandingPage_wv);
-		clickElement(KarzokromBabosthapona_c);
+		//WaitElementVisible(LandingPage_wv);
+		clickWaitElement(KarzokromBabosthapona_c);
 		Thread.sleep(2000);
 		WaitElementVisible(KarzokromBabosthaponaPage_w);
 		clickWaitElement(NewSamitiAcceptanceOption_c);
