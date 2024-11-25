@@ -19,7 +19,7 @@ public class FDR_Product extends BrowserSetup {
 	ProductSetup3rdPage ThirdPage = new ProductSetup3rdPage();
 	ProductSetup4thPage fourthPage = new ProductSetup4thPage();
 	//methods method = new methods();
-	@Test
+	@Test(description = "Check FDR product Setup")
 	public void ProductSetup() throws InterruptedException{
 		ExtentTest test = extent.createTest("FDR Product Make","FDR Product Setup: 4step");
 		test.log(Status.INFO, "Starting testing process");
@@ -28,18 +28,12 @@ public class FDR_Product extends BrowserSetup {
 		SPM.ProductInfoPage();
 		//test.pass("screenshot 64", MediaEntityBuilder.createScreenCaptureFromBase64String(methods.captureScreenshot_base64()).build());
 		//test.pass("Product page appeared");
-		Firstpage.FillupFirstProductSetupPage("প্রোডাক্ট অটোমেশন 015-২০২৪", "1000", "100000", "1000");//product Bangla Name, Lowest amount, highest amount, gunitok
+		Firstpage.FillupFirstProductSetupPage("প্রোডাক্ট অটোমেশন 017-২০২৪", "1000", "100000", "1000");//product Bangla Name, Lowest amount, highest amount, gunitok
         //test.pass("Product page appeared", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
 		//test.addScreenCaptureFromPath("testedpage.png");
 		String[] MunafaRateValues = { "5", "5.25", "5.50", "5.75", "6", "6.25", "6.50", "6.75", "7", "7.5", null, null, null, null, null };
-		//test.addScreenCaptureFromPath("testedpage.png");
-		//test.pass("Product Setup First page");
-        //test.pass("Product Setup First page", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
-
+		
 		Secondpage.FillupSecondProductSetupPage("01/02/2020","১২০ মাস",10,MunafaRateValues);
-		//test.addScreenCaptureFromPath("testedpage.png");
-		//test.pass("Product Setup Secound page");
-        //test.pass("Product Setup Second page", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
 		ThirdPage.AddingCharge("01/02/2021", "3");//karjokoritarik and charge rate
 		//test.addScreenCaptureFromPath("testedpage.png");
 		//test.pass("Product Setup Third page");

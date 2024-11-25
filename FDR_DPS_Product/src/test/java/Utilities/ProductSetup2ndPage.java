@@ -40,9 +40,6 @@ public class ProductSetup2ndPage extends methods{
         test.pass("প্রোডাক্টের মুনাফা page appeared", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot3.png")).build());
 		Thread.sleep(2000);
 		Fieldvalue(Date_in, ActivationDate);
-		
-		//DropdownSelectbyKeybord(timePeriod_dropselect, DurationYear);
-		//if(Duration=="১২০ মাস")
 		DropDOwnSelectByVisibleTxt(timePeriod_dropselect, Year);
 		Thread.sleep(2000);
 		click(SaveButton_click);
@@ -51,33 +48,13 @@ public class ProductSetup2ndPage extends methods{
 		for(int i=1; i<=munafayearNumber; i++) {
 			Fieldvalue(By.xpath("(//input[@name='profitRate'])["+ i +"]"), MunafaRateValues[i-1]);
 		}
-		
-//		Fieldvalue(FirstYear_in, Year1);
-//		Fieldvalue(SecondYear_in, Year2);
-//		Fieldvalue(ThirdYear_in, Year3);
-//		Fieldvalue(FourthYear_in, Year4);
-//		Fieldvalue(FifthYear_in, Year5);
-//		Fieldvalue(SixYear_in, Year6);
-//		Thread.sleep(2000);
-//		Fieldvalue(SeventhYear_in, Year7);
-//		Fieldvalue(EightYear, Year8);
-//		Fieldvalue(NineYear_in, Year9);
-//		Fieldvalue(TenYear_in, Year10);
-//		Fieldvalue(ElevenYear_in, Year11);
-//		Fieldvalue(TwelveYear, Year12);
-//		Thread.sleep(2000);
-//		Fieldvalue(TherteenYear_in, Year13);
-//		Fieldvalue(forteenYear_in, Year14);		
-//		Fieldvalue(fifteenYear_in, Year15);
-//
-//		Thread.sleep(2000);
+
         test.pass("প্রোডাক্টের মুনাফা setup screen", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot4.png")).build());
 		click(NextButton_cl);
         test.pass("প্রোডাক্টের মুনাফা set", MediaEntityBuilder.createScreenCaptureFromPath(methods.captureScreenshot("Screenshot5.png")).build());
 		Thread.sleep(2000);
 		WaitElementClick(SaveButtonInpopup);
 		Thread.sleep(2000);
-		//WaitElementClick(ProductSaveButton);
 
 	}
 

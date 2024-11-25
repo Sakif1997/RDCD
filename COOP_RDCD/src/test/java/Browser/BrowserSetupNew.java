@@ -18,6 +18,7 @@ public class BrowserSetupNew {
 	private static final ThreadLocal<WebDriver> DRIVER_LOCAL = new ThreadLocal<>();
 
 
+
 	public static WebDriver getDriver() {
 		return DRIVER_LOCAL.get();
 	}
@@ -47,12 +48,20 @@ public class BrowserSetupNew {
 	}
 	@BeforeSuite
 	public static synchronized void setBrowser() {
+
+
+
+
+
+
+
 		WebDriver webDriver = getBrowser(BrowserName);
 		webDriver.manage().window().maximize();
 		setDriver(webDriver);
 	}
 	@AfterSuite
 	public static synchronized void quitBrowser() {
+
 		getDriver().quit();
 	}
 }
