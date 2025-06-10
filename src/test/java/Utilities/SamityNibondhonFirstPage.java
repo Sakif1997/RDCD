@@ -3,6 +3,7 @@ package Utilities;
 import org.openqa.selenium.By;
 
 public class SamityNibondhonFirstPage extends Methods{
+	public By SamityBabosthapona_Click = By.xpath("//span[contains(text(),'সমিতি ব্যবস্থাপনা')]");
 	public By SamityNibondhon_click = By.xpath("//span[contains(text(),'সমিতি নিবন্ধনের আবেদন')]");
 	//public By NotunAbedon_c = By.xpath("//span[contains(text(),'নতুন আবেদন')]");
 	public By Prathomic_c = By.xpath("//input[@value='P']");
@@ -33,6 +34,8 @@ public class SamityNibondhonFirstPage extends Methods{
 	//01390743818
 	public By songostha_dropdown = By.name("enterprisingId");
 //	//মৎস্য অধিদপ্তর
+	public By ProkolpoName_dropdown = By.name("projectId");
+	//সার্বিক গ্রাম উন্নয়ন কর্মসূচি-৩য় পর্যায় (সিভিডিপি-৩) শীর্ষক প্রকল্প
 	public By SaveButton_click = By.xpath("//button[@aria-label='সংরক্ষন করুন ও পরবর্তী পাতায়']");
 	
 	
@@ -42,7 +45,8 @@ public class SamityNibondhonFirstPage extends Methods{
 	public By nextPage_c = By.xpath("//button[@aria-label='হালনাগাদ করুন']");
 //	
 	public void firstpageInputs(String SamityName) throws InterruptedException{
-		clickElement(SamityNibondhon_click);
+		clickWaitElement(SamityBabosthapona_Click);
+		clickWaitElement(SamityNibondhon_click);
 		//clickWaitElement(NotunAbedon_c);
 		Thread.sleep(2000);
 		clickElement(Prathomic_c);
@@ -67,7 +71,7 @@ public class SamityNibondhonFirstPage extends Methods{
 		Thread.sleep(2000);
 		ScrollDown();
 		clickElement(SamityTarik_click_input);
-		FieldValue(SamityTarik_click_input, "010123");
+		FieldValue(SamityTarik_click_input, "01012023");
 		FieldValue(VortiFee_input, "2000");
 		FieldValue(ShareShonkha_input, "12");
 		FieldValue(SharePrice_input, "100");
@@ -75,7 +79,11 @@ public class SamityNibondhonFirstPage extends Methods{
 		FieldValue(sharesell_input, "12");
 		FieldValue(mobileNumber_input,"01390743818");
 		Thread.sleep(2000);
-		DropDownSelectByVisibleText(songostha_dropdown, "মৎস্য অধিদপ্তর");
+		//DropDownSelectByVisibleText(songostha_dropdown, "মৎস্য অধিদপ্তর");
+		DropDownSelectByVisibleText(songostha_dropdown, "পল্লী উন্নয়ন ও সমবায় বিভাগ");
+		DropDownSelectByVisibleText(ProkolpoName_dropdown,"সার্বিক গ্রাম উন্নয়ন কর্মসূচি-৩য় পর্যায় (সিভিডিপি-৩) শীর্ষক প্রকল্প");
+		Thread.sleep(10000);
+
 		takeScreenshot("First Page");
 		clickElement(SaveButton_click);
 		//Thread.sleep(2000);

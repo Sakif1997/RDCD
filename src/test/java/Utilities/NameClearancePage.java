@@ -3,6 +3,7 @@ package Utilities;
 
 import org.openqa.selenium.By;
 public class NameClearancePage extends Methods{
+	public By SamityBabosthapona_Click = By.xpath("//span[contains(text(),'সমিতি ব্যবস্থাপনা')]");
 	public By NameClearance_c = By.xpath("//img[@alt='Name Clearance Icon']");
 	public By NameClearancePage_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
 
@@ -27,8 +28,10 @@ public class NameClearancePage extends Methods{
 	//NameclearanceTest.java
 	public void NameClearanceApply(String SamityName) throws InterruptedException{
         //getDriver().navigate().refresh();
-		clickElement(NameClearance_c);
+		clickWaitElement(SamityBabosthapona_Click);
+		clickWaitElement(NameClearance_c);
 		WaitElementVisible(NameClearancePage_w);
+		Thread.sleep(2000);
 		clickElement(prathomic_c);
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(selectBivag_D, "খুলনা");

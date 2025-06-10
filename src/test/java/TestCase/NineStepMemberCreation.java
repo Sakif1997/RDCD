@@ -7,7 +7,7 @@ import Utilities.*;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import MemberInformationCOOP.MemberFive;
 import MemberInformationCOOP.MemberFour;
 import MemberInformationCOOP.MemberOne;
@@ -15,7 +15,7 @@ import MemberInformationCOOP.MemberSix;
 import MemberInformationCOOP.MemberThree;
 import MemberInformationCOOP.MemberTwo;
 import Utilities.SamityNibondhon2ndUpdatePage;
-public class NineStepMemberCreation extends BrowserSetup{
+public class NineStepMemberCreation extends BrowserSetupNew{
 	public By CommityPage = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
 	public By SodossoNibondhon_c = By.xpath("//button[@aria-label='আগের পাতায়']");
 	public By SodossoNibondhonPage_c =By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
@@ -66,15 +66,14 @@ public class NineStepMemberCreation extends BrowserSetup{
 	public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
 		log.Baboharkarilogin();
 		//SamityName Input in First Page
-		p1.firstpageInputs("flow সমিতি 001-01/4/2024");
+		p1.firstpageInputs("Test by law-10/31/2024");
 		Thread.sleep(2000);
 		//newP2.Page2();
 		UpPage2.Page2();
 		//method.clickElement(secondPageicon_c);
 		//Thread.sleep(5000);
 		//p2.secondPageDone();
-		//Thread.sleep(5000);
-		//Thread.sleep(2000);
+
 		////method.ScrollDown();
 		//method.clickElement(nextPage_c);
 		p3.page3();

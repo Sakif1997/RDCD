@@ -22,8 +22,10 @@ public class ArthikinfoPage extends Methods{
         FieldValue(ShareNumber5_in,"2");
         FieldValue(ShareNumber6_in,"2");
         takeScreenshot("Share Number Information");
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         clickElement(Savebutton_c);
+        Thread.sleep(4000);
+
     }
 
 }

@@ -10,7 +10,7 @@
 		//String filePath = "path/to/your/image/file.jpg";
 
 	    // Place file path in clipboard
-		public void Upload(String filePath) throws AWTException {
+		public static void Upload(String filePath) throws AWTException {
 	    StringSelection stringSelection = new StringSelection(filePath);
 	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 

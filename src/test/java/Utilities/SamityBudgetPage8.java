@@ -78,7 +78,7 @@ public class SamityBudgetPage8 extends Methods{
         //clickElement(SaveToNextPage);
         Thread.sleep(2000);
         //WaitElementVisible(SaveToNextPage);
-        DropDownSelectByVisibleText(BudgetYear2_s,"২০২৫-২০২৬");
+        DropDownSelectByVisibleText(BudgetYear2_s,"২০২৩-২০২৪");
         KeybordInputSelectOption(joma11_in_enter,"আয়(30000000)");
         FieldValue(InputMoney11_in,"২০০০");
         //Thread.sleep(2000);

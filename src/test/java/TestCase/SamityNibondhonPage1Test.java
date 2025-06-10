@@ -6,7 +6,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import MemberInformationCOOP.MemberFive;
 import MemberInformationCOOP.MemberFour;
 import MemberInformationCOOP.MemberOne;
@@ -16,7 +16,7 @@ import MemberInformationCOOP.MemberTwo;
 import Utilities.Methods;
 import Utilities.SamityNibondhonPage1;
 ;
-public class SamityNibondhonPage1Test extends BrowserSetup{
+public class SamityNibondhonPage1Test extends BrowserSetupNew{
 	public By CommityPage = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
 	public By SodossoNibondhon_c = By.xpath("//button[@aria-label='আগের পাতায়']");
 	public By SodossoNibondhonPage_c =By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");

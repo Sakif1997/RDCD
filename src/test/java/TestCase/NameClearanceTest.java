@@ -4,17 +4,17 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import Utilities.NameClearancePage;
 
-public class NameClearanceTest extends BrowserSetup{
+public class NameClearanceTest extends BrowserSetupNew{
 	LoginBaboharkari login = new LoginBaboharkari();
 	NameClearancePage nc = new NameClearancePage();
 	@Test(description = "Check system allow new name clearance(সমিতি নাম অনুমোদনের জন্য প্রেরণ ): Enter By User")
 	public void NameClearance() throws InterruptedException, IOException{
 		login.Baboharkarilogin();
 		//Enter Name Every time
-		nc.NameClearanceApply("flow সমিতি 001-01/4/2024");
+		nc.NameClearanceApply("Test by law-10/31/2024");
 	}
 }
  

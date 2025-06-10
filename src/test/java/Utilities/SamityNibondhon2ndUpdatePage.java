@@ -1,7 +1,7 @@
 package Utilities;
 
 import org.openqa.selenium.By;
-import static Browser.BrowserSetup.getDriver;
+import static Browser.BrowserSetupNew.getDriver;
 
 public class SamityNibondhon2ndUpdatePage extends Methods {
     public By page2_w = By.xpath("//span[@class='doc-title']");

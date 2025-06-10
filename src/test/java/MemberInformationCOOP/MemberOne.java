@@ -93,22 +93,24 @@ public class MemberOne extends Methods{
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(religion_drop, "ইসলাম");
 		DropDownSelectByVisibleText(Unmarried_drop, "অবিবাহিত");
-		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
-		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
+		//DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
+		//DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
+		//DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
+		//DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		Thread.sleep(2000);
-		clickElement(SameAddress_c);
+		Checkbox(SameAddress_c);
 		
 		//Thread.sleep(2000);
 		clickElement(PersonImageSelect_c);
 		Thread.sleep(2000);
 
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\1.png");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\1.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
 		clickElement(PersonDOcumentSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
 		Thread.sleep(2000);
 		clickElement(SaveButton_c);
 		Thread.sleep(2000);

@@ -1,12 +1,12 @@
 package TestCase;
 
-import Browser.BrowserSetup;
+import Browser.BrowserSetupNew;
 import Utilities.LoginPages;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class StageLoginBaboharkari extends BrowserSetup {
+public class StageLoginBaboharkari extends BrowserSetupNew {
     LoginPages login =new LoginPages();
     @Test(description = "login by baboharkari")
     public void Baboharkarilogin() throws InterruptedException, IOException {

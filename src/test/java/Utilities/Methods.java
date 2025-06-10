@@ -1,13 +1,13 @@
 package Utilities;
-import static Browser.BrowserSetup.getDriver;
+import static Browser.BrowserSetupNew.getDriver;
 
+import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.time.Duration;
 import java.util.Random;
 import java.util.UUID;
 
 
-import Browser.BrowserSetup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -28,10 +28,12 @@ public class Methods {
 			return getDriver().findElement(locator);//driver = getDriver();
 		}
 		public void clickElement(By locator) {
+
 			getElement(locator).click();
 		}
 
-		public void FieldValue(By locator,String text) {
+		public void FieldValue(By locator,String text)
+		{
 			getElement(locator).sendKeys(text);
 		}
 
@@ -107,6 +109,7 @@ public class Methods {
 		    WebElement option = dropdown.findElement(optionLocator);
 		    option.click();
 		}
+		
 		public void DropDownSelectByVisibleText(By locator, String text) {
 			WebElement dropDownField = getElement(locator);
 			Select select = new Select(dropDownField);
@@ -150,6 +153,19 @@ public class Methods {
 			action.keyDown(Keys.ARROW_DOWN);
 			action.keyDown(Keys.ENTER);
 			action.build().perform();
+		}
+		
+
+		public void Checkbox(By locator){
+			if (!getElement(locator).isSelected()){
+				// If not selected, click the checkbox
+				clickElement(locator);
+				//System.out.println("Checkbox was not selected, now clicked.");
+			} else {
+				// If already selected, do nothing
+				//System.out.println("Checkbox is already selected, no action taken.");
+			}
+
 		}
 			
 }

@@ -28,11 +28,11 @@ public class MemberFive extends Methods{
 	//ARNOB
 	//TAWFIQ
 	public By NameBangla_in= By.name("memberNameBangla");
-	//জিহাদ 
+	//জিহাদ
 	//নিলা
-	//নাইম 
-	//মোমেন 
-	//অর্ণব 
+	//নাইম
+	//মোমেন
+	//অর্ণব
 	//তৌফিক
 	public By FatherName_in= By.name("fatherName");
 	//শাহেদ
@@ -40,9 +40,9 @@ public class MemberFive extends Methods{
 	//মোশাররফ
 	//আবুল
 	//মাহমুদ
-	//অর্ণব হোসাইন 
+	//অর্ণব হোসাইন
 	public By MotherName_in= By.name("motherName");
-//	ফাতেমা
+	//	ফাতেমা
 //	আয়েশা
 //	জেহান
 //	সুমাইয়া
@@ -66,9 +66,9 @@ public class MemberFive extends Methods{
 	public By thana_drp =By.xpath(" /html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/select[1]");
 	//মণিরামপুর
 	public By SameAddress_c =By.xpath("//input[@type='checkbox']");
-	public By PersonImageSelect_c =By.xpath("//label[@for='0']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
-	public By PersonSignatureSelect_c =By.xpath("//label[@for='1']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
-	public By PersonDOcumentSelect_c =By.xpath("//label[@for='2']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
+	public By PersonImageSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/label[1]/span[1] | //label[@for='0']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
+	public By PersonSignatureSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[2]/label[1]/span[1] | //label[@for='1']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
+	public By PersonDOcumentSelect_c =By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[3]/div[1]/div[2]/label[1]/span[1] | //label[@for='2']//span[@role='button'][contains(text(),'সংযুক্ত করুন')]");
 
 	public By SaveButton_c =By.xpath("//button[@aria-label='সংরক্ষন করুন']");
 	public By x =By.xpath("");
@@ -93,19 +93,19 @@ public class MemberFive extends Methods{
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(religion_drop, "ইসলাম");
 		DropDownSelectByVisibleText(Unmarried_drop, "অবিবাহিত");
-		DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
-		DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
+		//DropDownSelectByVisibleText(upojila_drop, "মণিরামপুর");
+		//DropDownSelectByVisibleText(thana_drp, "মণিরামপুর");
 		//Thread.sleep(2000);
-		//clickElement(SameAddress_c);
+		Checkbox(SameAddress_c);
 		clickElement(PersonImageSelect_c);
 		Thread.sleep(4000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\5.png");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\5.png");
 		clickElement(PersonSignatureSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\sign.jpg");
 		clickElement(PersonDOcumentSelect_c);
 		Thread.sleep(2000);
-		upload.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
+		UploadMethod.Upload("E:\\Eclipse Files\\RDCD\\Upload_Images\\document.png");
 		Thread.sleep(2000);
 		clickElement(SaveButton_c);
 		Thread.sleep(4000);

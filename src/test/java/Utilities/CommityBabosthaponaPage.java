@@ -5,7 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import javax.swing.*;
 
-import static Browser.BrowserSetup.getDriver;
+import static Browser.BrowserSetupNew.getDriver;
 
 public class CommityBabosthaponaPage extends Methods{
 

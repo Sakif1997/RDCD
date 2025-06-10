@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 import java.awt.*;
 
-import static Browser.BrowserSetup.getDriver;
+import static Browser.BrowserSetupNew.getDriver;
 
 public class SamityDocumentPage9 extends Methods {
     public By page9_w = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 css-8knn9q']");
