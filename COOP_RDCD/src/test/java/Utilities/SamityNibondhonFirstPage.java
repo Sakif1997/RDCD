@@ -63,7 +63,7 @@ public class SamityNibondhonFirstPage extends Methods{
 		Thread.sleep(2000);
 		DropDownSelectByVisibleText(Union_dropdown, "মণিরামপুর");
 		FieldValue(gram_in, "মণিরামপুর");
-		DropDownSelectByVisibleText(gram_dropdown, "গ্রাম/মহল্লা");
+		DropDownSelectByVisibleText(gram_dropdown, "গ্রাম/মহল্লা/ওয়ার্ড");
 		Thread.sleep(1000);
 		FieldValue(gram1_dropdown, "মণিরামপুর");
 		FieldValue(gram1_in, "মনিরামপুর");

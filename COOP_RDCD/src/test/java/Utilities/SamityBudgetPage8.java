@@ -62,7 +62,7 @@ public class SamityBudgetPage8 extends Methods{
         //Thread.sleep(2000);
         KeybordInputSelectOption(joma2,"মেয়াদী জমা(20301027)");
         FieldValue(InputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions1_c);
             Thread.sleep(1000);
         }
@@ -71,7 +71,7 @@ public class SamityBudgetPage8 extends Methods{
         //Thread.sleep(2000);
         KeybordInputSelectOption(Khoroch2_in_enter,"ভাড়া এবং কর(40101043)");
         FieldValue(KhorochInputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions2_c);
             Thread.sleep(1000);
         }
@@ -84,7 +84,7 @@ public class SamityBudgetPage8 extends Methods{
         //Thread.sleep(2000);
         KeybordInputSelectOption(joma22,"মেয়াদী জমা(20301027)");
         FieldValue(InputMoney22_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions11_c);
             Thread.sleep(1000);
         }
@@ -93,7 +93,7 @@ public class SamityBudgetPage8 extends Methods{
         //Thread.sleep(2000);
         KeybordInputSelectOption(Khoroch22_in_enter,"ভাড়া এবং কর(40101043)");
         FieldValue(KhorochInputMoney22_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions22_c);
             Thread.sleep(1000);
         }

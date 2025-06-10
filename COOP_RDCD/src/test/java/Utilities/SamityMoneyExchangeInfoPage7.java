@@ -28,21 +28,21 @@ public class SamityMoneyExchangeInfoPage7 extends Methods{
 
     public By SaveToNextPage = By.xpath("//button[@aria-label='সংরক্ষন করুন']");
     public void SamityArthikInfoPage7() throws InterruptedException{
-        KeybordInputSelectOption(joma1_in_enter,"আয়(30000000)");
+        KeybordInputSelectOption(joma1_in_enter,"সজ্জিতকরন সেবা হতে আয় (30201019)");
         FieldValue(InputMoney1_in,"২০০০");
         Thread.sleep(2000);
-        KeybordInputSelectOption(joma2,"মেয়াদী জমা(20301027)");
+        KeybordInputSelectOption(joma2,"জমা - কেন্দ্রীয় সমবায়(20301044)");
         FieldValue(InputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions1_c);
             Thread.sleep(1500);
         }
-        KeybordInputSelectOption(khoroch1_in_enter,"এসবিপি ঋণ (10601015)");
+        KeybordInputSelectOption(khoroch1_in_enter,"যৌথ মূলধন সমবায়ের শেয়ার (10502031)");
         FieldValue(khorochInputMoney1_in,"২০০০");
         Thread.sleep(2000);
-        KeybordInputSelectOption(Khoroch2_in_enter,"ভাড়া এবং কর(40101043)");
+        KeybordInputSelectOption(Khoroch2_in_enter,"স্থায়ী জমা (এফডিআর )(10504011))");
         FieldValue(KhorochInputMoney2_in,"২০০০");
-        for(int i=0; i<=7; i++){
+        for(int i=0; i<=6; i++){
             clickElement(canceloptions2_c);
             Thread.sleep(1500);
         }

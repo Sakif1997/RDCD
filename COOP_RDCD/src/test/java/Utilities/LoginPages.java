@@ -16,7 +16,7 @@ public class LoginPages extends Methods{
 	public By LandHomepage_w = By.xpath("//img[@alt='Site Logo']");
 	
 	//User Elements
-	public By UserLandhomepage_E = By.xpath("//p[contains(text(),'নিবন্ধন প্রদান')]");
+	//public By UserLandhomepage_E = By.xpath("//p[contains(text(),'নিবন্ধন প্রদান')]");
 	
 	
 	//login by baboharkari
@@ -46,7 +46,7 @@ public class LoginPages extends Methods{
 		Thread.sleep(2000);
 		takeScreenshot("login");
 		clickElement(loginButton);
-		WaitElementVisible(UserLandhomepage_E);
+		//WaitElementVisible(UserLandhomepage_E);
 	}
 
 }

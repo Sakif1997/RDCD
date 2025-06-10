@@ -65,7 +65,7 @@ public class StageServerNineStepMemberCreation extends BrowserSetupNew {
     public void UpToAddMember() throws  InterruptedException, IOException, AWTException {
         log.Baboharkarilogin();
         //SamityName Input in First Page
-        p1.firstpageInputs("Flow Samity-3/11/2024");
+        p1.firstpageInputs("Stage server flow সমিতি 000");
         Thread.sleep(2000);
         //newP2.Page2();
         UpPage2.Page2();

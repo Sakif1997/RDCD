@@ -3,10 +3,10 @@ package Utilities;
 import org.openqa.selenium.By;
 
 public class NameApprovalPage extends Methods{
-	public By LandingPage_wv = By.xpath("//p[contains(text(),'নিবন্ধন প্রদান')]");
+	//public By LandingPage_wv = By.xpath("//span[contains(text(),'প্রশাসনিক সেটআপ')]");
 	public By KarzokromBabosthapona_c = By.xpath("//span[contains(text(),'কার্যক্রম ব্যবস্থাপনা')]");
-	public By KarzokromBabosthaponaPage_w= By.name("serviceId");
-	public By NewSamitiAcceptanceOption_c = By.xpath("//tbody/tr[1]/td[6]//*[name()='svg']//*[name()='path' and contains(@d,'M19 3H5c-1')]");
+	public By KarzokromBabosthaponaPage_w= By.xpath("//span[contains(text(),'আগত')]");
+	public By NewSamitiAcceptanceOption_c = By.xpath("//tbody/tr[1]/td[7]//*[name()='svg']");
 	public By NameClearanceApprovalPage_w = By.xpath("//span[contains(text(),'সমিতির নাম :')]");
 	//scroll down
 	public By OnumodonDropdownList_c = By.name("serviceActionId");
@@ -21,7 +21,7 @@ public class NameApprovalPage extends Methods{
 		//WaitElementVisible(LandingPage_wv);
 		clickWaitElement(KarzokromBabosthapona_c);
 		Thread.sleep(2000);
-		WaitElementVisible(KarzokromBabosthaponaPage_w);
+		clickWaitElement(KarzokromBabosthaponaPage_w);
 		clickWaitElement(NewSamitiAcceptanceOption_c);
 		WaitElementVisible(NameClearanceApprovalPage_w);
 		Thread.sleep(2000);

@@ -18,7 +18,7 @@ public class NameClearancePage extends Methods{
 	//কৃষি বা কৃষক সমবায় সমিতি
 	public By SomitiName_in =By.name("samityName");
 	//জাগো
-	public By SaveButton_c =By.xpath("//button[contains(text(),'সংরক্ষন করুন')]");
+	public By SaveButton_c =By.xpath("//button[contains(text(),'আবেদন দাখিল')]");
 	//logout
 	public By DUplicateSamiti_w = By.xpath("//span[contains(text(),'সমিতিটির নাম বিদ্যমান রয়েছে')]");
 	//public By profileicon_c = By.xpath("/html[1]/body[1]/div[1]/main[1]/div[1]/header[1]/div[1]/div[1]/div[2]/div[2]/div[1]/button[3]/span[1]/*[name()='svg'][1]/*[name()='path'][1]");
